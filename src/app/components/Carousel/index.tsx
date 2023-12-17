@@ -13,15 +13,15 @@ export const CarouselSection = ({ children }: TCarouselProps) => {
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
-      items: 2,
+      items: 3,
     },
     desktop: {
-      breakpoint: { max: 3000, min: 1024 },
+      breakpoint: { max: 3000, min: 1540 },
       items: 2,
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
+      breakpoint: { max: 1540, min: 464 },
+      items: 1,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
@@ -29,7 +29,13 @@ export const CarouselSection = ({ children }: TCarouselProps) => {
     },
   };
 
-  const ButtonGroup = ({ next, previous }) => {
+  const ButtonGroup = ({
+    next,
+    previous,
+  }: {
+    next: () => void;
+    previous: () => void;
+  }) => {
     return (
       <CarouselButtons>
         <Button icon={<ChevronLeft size={28} />} onClick={previous} />
@@ -45,13 +51,19 @@ export const CarouselSection = ({ children }: TCarouselProps) => {
         ssr
         arrows={false}
         renderButtonGroupOutside
-        customButtonGroup={<ButtonGroup />}
+        customButtonGroup={
+          <ButtonGroup
+            next={function (): void {}}
+            previous={function (): void {}}
+          />
+        }
         deviceType="desktop"
         transitionDuration={500}
         partialVisbile={false}
         containerClass="carousel-container"
         itemClass="react-multi-carousel-track"
         className="carousel-section"
+        sliderClass="carousel-slider"
       >
         {children}
       </Carousel>
