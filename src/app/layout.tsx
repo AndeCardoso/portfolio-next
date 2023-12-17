@@ -21,6 +21,7 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;700&display=swap"
           rel="stylesheet"
         />
+        <link rel="icon" href="/favicon.png" />
       </head>
       <body>
         <StyledComponentsRegistry>
