@@ -13,6 +13,7 @@ export const StyledText = styled(Text)`
 
 export const StyledLink = styled(Link)<TStyledButtonProps>`
   display: flex;
+  align-items: center;
   width: fit-content;
   padding: ${({ onlyIcon }) => (onlyIcon ? "16px" : "16px 32px")};
   cursor: pointer;
