@@ -1,6 +1,6 @@
 import React from "react";
 import { IExperienceData } from "../..";
-import { Container, PeriodText, Top } from "./styles";
+import { Container, DescriptionText, PeriodText, Top } from "./styles";
 import { Text } from "@/components/base/Text";
 import { colors } from "@/global/colors";
 
@@ -21,7 +21,7 @@ export const ExperienceItem = ({
           {company}
         </Text>
       </Top>
-      <Text>{description}</Text>
+      <DescriptionText>{description}</DescriptionText>
     </Container>
   );
 };

@@ -111,7 +111,7 @@ export const experiencesData = [
     company: "WeFit",
     period: "Current",
     description:
-      "Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
+      "Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
   },
   {
     company: "Infocap",
@@ -132,7 +132,7 @@ export const reviewsData = [
     name: "Some Mc'one",
     role: "Mobile developer",
     quote:
-      "Excellent all around! What stood out most was Jake's excellent service. He made sure our order was placed in time, even though we were ordering on a holiday.",
+      "Excellent all around! What stood out most was Jake's excellent service. He made sure our order was placed in time, even though we were ordering on What stood out most was Jake's excellent service. He made sure our order was placed in time, even though we were ordering on What stood out most was Jake's excellent service. He made sure our order was placed in time, even though we were ordering on a holiday.",
   },
   {
     name: "Anny Boddy",

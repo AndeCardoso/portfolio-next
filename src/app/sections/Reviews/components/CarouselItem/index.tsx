@@ -1,6 +1,6 @@
 import React from "react";
 import { IReviewsData } from "../..";
-import { Author, Container, Description, Quotation } from "./styles";
+import { Author, Container, Description, Quotation, QuoteText } from "./styles";
 import { Text } from "@/components/base/Text";
 import { colors } from "@/global/colors";
 import Image from "next/image";
@@ -41,7 +41,7 @@ export const ReviewItem = ({
         <Quotation bold="heavy" size={48} color={colors.PRIMARY}>
           &quot;
         </Quotation>
-        <Text>{quote}</Text>
+        <QuoteText>{quote}</QuoteText>
       </Description>
     </Container>
   );
