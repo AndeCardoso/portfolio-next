@@ -8,7 +8,7 @@ import { Section } from "@/components/Section";
 import { Text } from "@/components/base/Text";
 
 import { About } from "@/sections/About";
-import { Header } from "@/sections/Header";
+import { HomeSection } from "@/sections/Home";
 import { Contact } from "@/sections/Contact";
 import { ITechIcon, Technologies } from "@/sections/Technologies";
 
@@ -41,7 +41,7 @@ export default function Home() {
       <Container>
         <FixedBanner />
         <ScrollSide>
-          <Header name={name} roles={roles} bio={bio} />
+          <HomeSection name={name} roles={roles} bio={bio} />
           <Divisor />
           <Section title="About Me" description="My history" linked="about">
             <About text={aboutText} attributes={contactInfo} />
