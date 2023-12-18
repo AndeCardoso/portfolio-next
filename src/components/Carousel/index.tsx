@@ -16,11 +16,11 @@ export const CarouselSection = ({ children }: TCarouselProps) => {
       items: 3,
     },
     desktop: {
-      breakpoint: { max: 3000, min: 1540 },
+      breakpoint: { max: 3000, min: 1665 },
       items: 2,
     },
     tablet: {
-      breakpoint: { max: 1540, min: 464 },
+      breakpoint: { max: 1665, min: 464 },
       items: 1,
     },
     mobile: {
@@ -48,8 +48,8 @@ export const CarouselSection = ({ children }: TCarouselProps) => {
     <Container>
       <Carousel
         responsive={responsive}
-        ssr
         arrows={false}
+        ssr
         renderButtonGroupOutside
         customButtonGroup={
           <ButtonGroup
@@ -57,13 +57,10 @@ export const CarouselSection = ({ children }: TCarouselProps) => {
             previous={function (): void {}}
           />
         }
-        deviceType="desktop"
         transitionDuration={500}
         partialVisbile={false}
+        itemClass="carousel-item"
         containerClass="carousel-container"
-        itemClass="react-multi-carousel-track"
-        className="carousel-section"
-        sliderClass="carousel-slider"
       >
         {children}
       </Carousel>

@@ -1,6 +1,12 @@
 import React from "react";
 import { IReviewsData } from "../..";
-import { Author, Container, Description, Quotation, QuoteText } from "./styles";
+import {
+  Author,
+  Container,
+  Quotation,
+  QuoteContainer,
+  QuoteText,
+} from "./styles";
 import { Text } from "@components/base/Text";
 import { colors } from "@src/global/colors";
 import Image from "next/image";
@@ -37,12 +43,12 @@ export const ReviewItem = ({
           </Text>
         </div>
       </Author>
-      <Description>
+      <QuoteContainer>
         <Quotation bold="heavy" size={48} color={colors.PRIMARY}>
           &quot;
         </Quotation>
         <QuoteText>{quote}</QuoteText>
-      </Description>
+      </QuoteContainer>
     </Container>
   );
 };

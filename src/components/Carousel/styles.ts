@@ -6,7 +6,7 @@ export const Container = styled.section`
   flex-direction: column-reverse;
   margin-top: -158px;
 
-  .carousel-section {
+  .carousel-container {
     max-width: 1120px;
 
     @media screen and (max-width: 3000px) {
@@ -19,14 +19,17 @@ export const Container = styled.section`
       max-width: 720px;
     }
     @media screen and (max-width: 1720px) {
-      max-width: 620px;
+      max-width: 700px;
     }
-    @media screen and (max-width: 1540px) {
+    @media screen and (max-width: 1685px) {
+      max-width: 690px;
+    }
+    @media screen and (max-width: 1665px) {
       max-width: 520px;
     }
   }
-  .carousel-slider {
-    gap: 32px;
+  .carousel-item {
+    margin-right: 24px;
   }
 `;
 

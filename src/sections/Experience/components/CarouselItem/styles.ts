@@ -4,6 +4,10 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   max-width: 380px;
+
+  @media screen and (max-width: 1665px) {
+    max-width: 590px;
+  }
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -22,7 +26,7 @@ export const DescriptionText = styled(Text)`
   padding-right: 16px;
 
   &::-webkit-scrollbar {
-    width: 6px;
+    width: 4px;
   }
   &::-webkit-scrollbar-track {
     background: transparent;
