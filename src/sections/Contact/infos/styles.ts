@@ -1,8 +1,10 @@
+import { Text } from "@src/components/base/Text";
+import { breakpointScreenEnum } from "@src/constants/breakpoints";
 import { colors } from "@src/global/colors";
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: auto;
+  min-width: 40%;
   display: flex;
   flex-direction: column;
   padding: 32px;
@@ -29,7 +31,12 @@ export const List = styled.ul`
 export const Row = styled.li`
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   list-style: none;
-  gap: 16px;
+`;
+
+export const Key = styled(Text)``;
+
+export const Value = styled(Text)`
+  word-break: break-word;
 `;

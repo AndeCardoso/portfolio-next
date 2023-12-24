@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpointScreenEnum } from "@src/constants/breakpoints";
 
 export const Container = styled.section`
   position: fixed;
@@ -7,6 +8,12 @@ export const Container = styled.section`
   width: 45%;
   height: 100%;
   background: -webkit-linear-gradient(-50deg, #00dbff40, #00b6ff90);
+
+  @media screen and (max-width: ${breakpointScreenEnum.MOBILE}px) {
+    position: none;
+    width: 100%;
+    height: 60%;
+  }
 `;
 
 export const ImageBanner = styled.div`

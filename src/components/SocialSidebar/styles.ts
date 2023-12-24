@@ -1,5 +1,6 @@
-import { colors } from "@src/global/colors";
 import styled from "styled-components";
+import { breakpointScreenEnum } from "@src/constants/breakpoints";
+import { colors } from "@src/global/colors";
 
 export const Container = styled.div`
   width: 90px;
@@ -11,6 +12,14 @@ export const Container = styled.div`
   justify-content: flex-end;
   border-left: 0.2px solid ${colors.PRIMARY};
   background-color: ${colors.BACKGROUND_COLOR};
+
+  @media screen and (max-width: ${breakpointScreenEnum.MOBILE}px) {
+    width: 100%;
+    height: auto;
+    padding: 64px 0 24px 0;
+    justify-content: center;
+    border: none;
+  }
 `;
 
 export const Wrapper = styled.article`
@@ -22,4 +31,11 @@ export const Wrapper = styled.article`
   margin-bottom: 36px;
   padding-inline: 16px;
   gap: 16px;
+
+  @media screen and (max-width: ${breakpointScreenEnum.MOBILE}px) {
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
 `;

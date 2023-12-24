@@ -1,5 +1,6 @@
 "use client";
 import { createGlobalStyle } from "styled-components";
+import { colors } from "./colors";
 
 const GlobalStyle = createGlobalStyle`
   html, body {
@@ -7,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+    background-color: ${colors.BACKGROUND_COLOR};
   };
   h1, h2, h3, h4, p, span {
     color: white;

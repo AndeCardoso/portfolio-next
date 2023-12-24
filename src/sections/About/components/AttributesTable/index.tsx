@@ -10,9 +10,9 @@ interface IAttributesTableProps {
 export const AttributesTable = ({ data }: IAttributesTableProps) => {
   return (
     <Table>
-      {Object.entries(data).map((item, index) => {
+      {Object.entries(data).map((item) => {
         return (
-          <Row key={`${index}`}>
+          <Row key={`${item[0]}`}>
             <Key size={14} bold="medium" color={colors.PRIMARY} capsLock>
               {item[0]}:
             </Key>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Header, List, Row } from "./styles";
+import { Container, Header, Key, List, Row, Value } from "./styles";
 import { Text } from "@components/base/Text";
 import { name, position } from "@constants/profileText";
 import { colors } from "@src/global/colors";
@@ -22,18 +22,18 @@ export const InfoContact = ({ infoList }: IInfoContactProps) => {
         </Text>
       </Header>
       <List>
-        {Object.entries(infoList).map((item, index) => (
-          <Row key={`${index}`}>
-            <Text size={14} bold="medium" color={colors.PRIMARY} capsLock>
+        {Object.entries(infoList).map((item) => (
+          <Row key={`${item[0]}`}>
+            <Key size={14} bold="medium" color={colors.PRIMARY} capsLock>
               {item[0]}:
-            </Text>
-            <Text size={14} bold="medium">
+            </Key>
+            <Value size={14} bold="medium">
               {item[1]}
-            </Text>
+            </Value>
           </Row>
         ))}
       </List>
-      <Image src={mock} alt="signature" height={80} className="signature" />
+      {/* <Image src={mock} alt="signature" height={80} className="signature" /> */}
     </Container>
   );
 };
