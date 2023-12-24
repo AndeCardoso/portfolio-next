@@ -27,7 +27,7 @@ export const Text = ({
 }: ITextProps) => {
   const stylesProps: React.CSSProperties = {
     fontFamily: "Poppins",
-    fontSize: size || 16,
+    fontSize: size ? `${size / 16}rem` : "1rem",
     color: color,
     fontWeight: bold ? fontWeightBold[bold] : 200,
     textTransform: capsLock ? "uppercase" : "none",
