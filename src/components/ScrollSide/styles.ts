@@ -3,7 +3,6 @@ import { colors } from "@src/global/colors";
 import { breakpointScreenEnum } from "@src/constants/breakpoints";
 
 export const Container = styled.section`
-  width: 100%;
   padding-top: 7%;
   background-color: ${colors.BACKGROUND_COLOR};
   right: 64px;
@@ -26,11 +25,10 @@ export const Container = styled.section`
   }
 
   @media screen and (max-width: ${breakpointScreenEnum.MOBILE}px) {
-    position: none;
-    width: 100%;
     right: none;
-    margin-top: 185%;
     padding: 0 24px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid ${colors.PRIMARY};
     background-color: ${colors.BACKGROUND_COLOR};
     z-index: 10;
   }

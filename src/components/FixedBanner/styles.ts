@@ -10,9 +10,9 @@ export const Container = styled.section`
   background: -webkit-linear-gradient(-50deg, #00dbff40, #00b6ff90);
 
   @media screen and (max-width: ${breakpointScreenEnum.MOBILE}px) {
-    position: none;
+    position: static;
     width: 100%;
-    height: 60%;
+    height: 70vh;
   }
 `;
 

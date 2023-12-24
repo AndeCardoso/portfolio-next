@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { breakpointScreenEnum } from "@src/constants/breakpoints";
 import { colors } from "@src/global/colors";
 
-export const Container = styled.div`
+export const Container = styled.section`
   width: 90px;
   height: 100vh;
   position: sticky;
@@ -16,7 +16,7 @@ export const Container = styled.div`
   @media screen and (max-width: ${breakpointScreenEnum.MOBILE}px) {
     width: 100%;
     height: auto;
-    padding: 64px 0 24px 0;
+    padding: 32px 0;
     justify-content: center;
     border: none;
   }

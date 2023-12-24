@@ -14,13 +14,11 @@ export const Main = styled.main`
 `;
 
 export const Container = styled.main`
-  position: relative;
   display: flex;
   margin-left: 45%;
   width: 100%;
 
   @media screen and (max-width: ${breakpointScreenEnum.MOBILE}px) {
-    position: sticky;
     flex-direction: column;
     margin: 0;
     margin-left: none;

@@ -55,7 +55,7 @@ export default function Home() {
             <Technologies iconsList={techIconList as ITechIcon[]} />
           </Section>
           <Divisor />
-          {/* <Section
+          <Section
             title="Experiences"
             description="Working with"
             linked="experiences"
@@ -69,7 +69,7 @@ export default function Home() {
             linked="reviews"
           >
             <Reviews reviewsList={reviewsData} />
-          </Section> */}
+          </Section>
           <Divisor />
           <Section title="Projects" description="Last works" linked="projects">
             <Text>teste</Text>
