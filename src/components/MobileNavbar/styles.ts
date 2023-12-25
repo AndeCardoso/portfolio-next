@@ -3,7 +3,7 @@ import { breakpointScreenEnum } from "@src/constants/breakpoints";
 import { colors } from "@src/global/colors";
 
 interface IBurguerButtonProps {
-  isOpen: boolean;
+  $isOpen: boolean;
 }
 
 export const Container = styled.nav<IBurguerButtonProps>`
@@ -20,8 +20,8 @@ export const Container = styled.nav<IBurguerButtonProps>`
   padding-top: 150px;
   top: 0;
   right: 0;
-  transform: ${({ isOpen }) =>
-    isOpen ? "translateX(0)" : "translateX(+100%)"};
+  transform: ${({ $isOpen }) =>
+    $isOpen ? "translateX(0)" : "translateX(+100%)"};
   transition: all ease-in-out 0.6s;
   z-index: -15;
   gap: 32px;
@@ -43,8 +43,8 @@ export const BurguerButton = styled.div<IBurguerButtonProps>`
   cursor: pointer;
   z-index: 10;
   transition: all ease-in-out 0.5s;
-  background-color: ${({ isOpen }) =>
-    isOpen ? "transparent" : colors.HEADER_BACKGROUND_OPACITY};
+  background-color: ${({ $isOpen }) =>
+    $isOpen ? "transparent" : colors.HEADER_BACKGROUND_OPACITY};
   padding: 24px;
   border-radius: 50px;
 
@@ -63,17 +63,17 @@ export const BurguerButton = styled.div<IBurguerButtonProps>`
   }
 
   div:nth-child(1) {
-    transform: ${({ isOpen }) => (isOpen ? "rotate(45deg)" : "rotate(0)")};
+    transform: ${({ $isOpen }) => ($isOpen ? "rotate(45deg)" : "rotate(0)")};
   }
 
   div:nth-child(2) {
-    opacity: ${({ isOpen }) => (isOpen ? 0 : 1)};
-    transform: ${({ isOpen }) =>
-      isOpen ? "translateX(-20px)" : "translateX(0)"};
+    opacity: ${({ $isOpen }) => ($isOpen ? 0 : 1)};
+    transform: ${({ $isOpen }) =>
+      $isOpen ? "translateX(-20px)" : "translateX(0)"};
   }
 
   div:nth-child(3) {
-    transform: ${({ isOpen }) => (isOpen ? "rotate(-45deg)" : "rotate(0)")};
+    transform: ${({ $isOpen }) => ($isOpen ? "rotate(-45deg)" : "rotate(0)")};
   }
 
   @media screen and (min-width: ${breakpointScreenEnum.MOBILE + 1}px) {

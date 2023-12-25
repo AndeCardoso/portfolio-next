@@ -21,7 +21,7 @@ export const Button = ({
   ...rest
 }: IButtonProps) => {
   return link ? (
-    <StyledLink {...rest} href={onClick} target={target} onlyIcon={!children}>
+    <StyledLink {...rest} href={onClick} target={target} $onlyIcon={!children}>
       {children ? (
         <StyledText size={size} bold={bold} capsLock>
           {children}
@@ -30,7 +30,7 @@ export const Button = ({
       {icon}
     </StyledLink>
   ) : (
-    <StyledButton {...rest} onClick={onClick} onlyIcon={!children}>
+    <StyledButton {...rest} onClick={onClick} $onlyIcon={!children}>
       {children ? (
         <StyledText size={size} bold={bold} capsLock>
           {children}

@@ -27,6 +27,7 @@ export const WrapperBrand = styled.div`
   display: flex;
   align-items: center;
   gap: 16px;
+  cursor: pointer;
 
   p {
     width: 150px;
