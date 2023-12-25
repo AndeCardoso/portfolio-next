@@ -36,7 +36,7 @@ export default function Home() {
       <Navbar
         brandName={name}
         brandImage={BrandLogo}
-        sectionsButton={headerSectionsButtons}
+        sectionButtons={headerSectionsButtons}
       />
       <Container>
         <FixedBanner />

@@ -2,7 +2,7 @@ import React, { ReactNode, useRef } from "react";
 import { Container, Wrapper } from "./styles";
 import { Text } from "../base/Text";
 import { colors } from "@src/global/colors";
-import { breakpointScreenEnum } from "@src/constants/breakpoints";
+import { useWindowDimensions } from "@src/hooks/useWindowDimension";
 
 type TSectionProps = {
   title: string;
@@ -17,8 +17,7 @@ export const Section = ({
   children,
   linked,
 }: TSectionProps) => {
-  const windowSize = useRef(window.innerWidth);
-  const isMobile = windowSize.current <= breakpointScreenEnum.MOBILE;
+  const { isMobile } = useWindowDimensions();
 
   return (
     <Container id={linked}>

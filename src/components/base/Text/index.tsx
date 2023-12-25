@@ -1,8 +1,8 @@
 "use client";
-import React from "react";
+import React, { ReactNode } from "react";
 
 export interface ITextProps {
-  children: string | string[];
+  children: string | string[] | ReactNode;
   color?: string;
   size?: number;
   bold?: TBoldWeight;
