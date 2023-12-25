@@ -27,12 +27,8 @@ export const CarouselSection = ({ children }: TCarouselProps) => {
       breakpoint: { max: 1350, min: 768 },
       items: 2,
     },
-    tabletSmall: {
-      breakpoint: { max: 768, min: 464 },
-      items: 1,
-    },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 768, min: 0 },
       items: 1,
     },
   };

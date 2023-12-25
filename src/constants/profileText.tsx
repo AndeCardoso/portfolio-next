@@ -14,12 +14,12 @@ export const roles = [
 ];
 
 export const contactInfo = {
-  age: "29",
+  age: new Date().getFullYear() - 1994,
   residence: "Brazil",
   "main role": "Front-End",
   address: "Florianópolis",
-  PHONE: "+55 51 99724-5468",
-  "E-MAIL": "andersoncardoso.dev@gmail.com",
+  phone: "+55 51 99724-5468",
+  "e-mail": "andersoncardoso.dev@gmail.com",
 };
 
 export const aboutText = `I consider myself a self-taught person because I can learn with

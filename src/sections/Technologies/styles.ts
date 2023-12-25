@@ -8,11 +8,10 @@ export const Container = styled.div`
   grid-auto-flow: column;
   row-gap: 64px;
 
-  @media screen and (max-width: ${breakpointScreenEnum.MOBILE}px) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 32px;
+  @media screen and (max-width: 600px) {
+    grid-template-rows: repeat(3, 90px);
+    grid-auto-flow: column;
+    row-gap: 120px;
   }
 `;
 

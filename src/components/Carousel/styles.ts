@@ -29,7 +29,10 @@ export const Container = styled.section`
       max-width: 520px;
     }
     @media screen and (max-width: 1350px) {
-      max-width: 1100px;
+      max-width: 1250px;
+    }
+    @media screen and (max-width: 768px) {
+      max-width: 750px;
     }
   }
   .carousel-item {
