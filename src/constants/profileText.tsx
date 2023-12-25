@@ -81,10 +81,10 @@ export const headerSectionsButtons = [
     text: "Reviews",
     link: "#reviews",
   },
-  {
-    text: "Projects",
-    link: "#projects",
-  },
+  // {
+  //   text: "Projects",
+  //   link: "#projects",
+  // },
   {
     text: "Contact",
     link: "#contact",
