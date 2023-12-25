@@ -1,3 +1,4 @@
+import { breakpointScreenEnum } from "@src/constants/breakpoints";
 import { colors } from "@src/global/colors";
 import styled from "styled-components";
 
@@ -13,6 +14,10 @@ export const Container = styled.div`
   position: relative;
   margin-top: 64px;
   gap: 32px;
+
+  @media screen and (max-width: ${breakpointScreenEnum.MOBILE}px) {
+    align-items: center;
+  }
 `;
 
 export const Roles = styled.span`

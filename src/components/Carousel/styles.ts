@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpointScreenEnum } from "@src/constants/breakpoints";
 
 export const Container = styled.section`
   width: 100%;
@@ -27,9 +28,19 @@ export const Container = styled.section`
     @media screen and (max-width: 1665px) {
       max-width: 520px;
     }
+    @media screen and (max-width: 1350px) {
+      max-width: 1250px;
+    }
+    @media screen and (max-width: 768px) {
+      max-width: 750px;
+    }
   }
   .carousel-item {
     margin-right: 24px;
+  }
+
+  @media screen and (max-width: ${breakpointScreenEnum.MOBILE}px) {
+    margin-top: 0;
   }
 `;
 
@@ -38,4 +49,9 @@ export const CarouselButtons = styled.div`
   justify-content: flex-end;
   gap: 16px;
   margin-bottom: 116px;
+
+  @media screen and (max-width: ${breakpointScreenEnum.MOBILE}px) {
+    justify-content: center;
+    margin-bottom: 32px;
+  }
 `;

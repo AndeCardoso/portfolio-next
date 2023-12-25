@@ -36,7 +36,7 @@ export default function Home() {
       <Navbar
         brandName={name}
         brandImage={BrandLogo}
-        sectionsButton={headerSectionsButtons}
+        sectionButtons={headerSectionsButtons}
       />
       <Container>
         <FixedBanner />
@@ -71,9 +71,9 @@ export default function Home() {
             <Reviews reviewsList={reviewsData} />
           </Section>
           <Divisor />
-          <Section title="Projects" description="Last works" linked="projects">
+          {/* <Section title="Projects" description="Last works" linked="projects">
             <Text>teste</Text>
-          </Section>
+          </Section> */}
           <Divisor />
           <Section title="Contact me" description="Call me" linked="contact">
             <Contact infoList={contactInfo} />

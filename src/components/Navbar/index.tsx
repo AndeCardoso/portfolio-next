@@ -1,4 +1,3 @@
-import React from "react";
 import {
   BrandName,
   Container,
@@ -7,18 +6,17 @@ import {
   WrapperBrand,
   WrapperButtons,
 } from "./styles";
-import { Text } from "../base/Text";
 import { Download } from "styled-icons/evaicons-solid";
-
 import Image, { StaticImageData } from "next/image";
+import { MobileNavbar } from "../MobileNavbar";
 
 interface INavbarProps {
   brandName: string;
   brandImage: StaticImageData;
-  sectionsButton: ISectionButton[];
+  sectionButtons: ISectionButton[];
 }
 
-interface ISectionButton {
+export interface ISectionButton {
   text: string;
   link: string;
 }
@@ -26,34 +24,52 @@ interface ISectionButton {
 export const Navbar = ({
   brandName,
   brandImage,
-  sectionsButton,
+  sectionButtons,
 }: INavbarProps) => {
   return (
     <Container>
-      <WrapperBrand>
-        <Image alt="Brand image" src={brandImage} width={50} height={50} />
-        <BrandName bold="medium" size={22}>
-          {brandName}
-        </BrandName>
-      </WrapperBrand>
-      <WrapperButtons>
-        {sectionsButton.map((btn, id) => (
+      <HeaderButton onClick={"#home"} bold="heavy" size={14} link>
+        <WrapperBrand>
+          <Image alt="Brand image" src={brandImage} width={50} height={50} />
+          <BrandName bold="medium" size={22}>
+            {brandName}
+          </BrandName>
+        </WrapperBrand>
+      </HeaderButton>
+      <MobileNavbar
+        sectionButtons={sectionButtons}
+        resumeButton={
           <HeaderButton
-            key={`${btn.text}-${id}`}
-            onClick={btn.link}
+            onClick={"/pdf/AndersonCardoso-Resume.pdf"}
+            bold="heavy"
+            icon={<Download size={18} style={{ marginLeft: 8 }} />}
+            size={14}
+            link
+            target="_blank"
+          >
+            Resumé
+          </HeaderButton>
+        }
+      />
+      <WrapperButtons>
+        {sectionButtons.map((button) => (
+          <HeaderButton
+            key={`${button.text}`}
+            onClick={button.link}
             bold="heavy"
             size={14}
             link
           >
-            {btn.text}
+            {button.text}
           </HeaderButton>
         ))}
         <DownloadButton
-          onClick="https://andersoncardoso.dev.br/pdf/AndersonCardoso-Curriculo.pdf"
+          onClick="/pdf/AndersonCardoso-Resume.pdf"
           icon={<Download size={18} style={{ marginLeft: 8 }} />}
           size={14}
           bold="heavy"
           link
+          target="_blank"
         >
           Resumé
         </DownloadButton>

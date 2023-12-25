@@ -3,7 +3,7 @@ import { StyledButton, StyledLink, StyledText } from "./styles";
 import { ITextProps } from "../Text";
 
 interface IButtonProps extends Omit<ITextProps, "children"> {
-  children?: string;
+  children?: string | ReactNode;
   icon?: ReactNode;
   onClick?: any;
   link?: boolean;

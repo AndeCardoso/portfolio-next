@@ -1,3 +1,4 @@
+import { breakpointScreenEnum } from "@src/constants/breakpoints";
 import { colors } from "@src/global/colors";
 import styled from "styled-components";
 
@@ -9,6 +10,11 @@ export const Container = styled.section`
   background-color: ${colors.BACKGROUND_COLOR};
   padding-top: 200px;
   margin-top: -200px;
+  height: auto;
+
+  @media screen and (max-width: ${breakpointScreenEnum.MOBILE}px) {
+    align-items: center;
+  }
 `;
 
 export const Wrapper = styled.article`
