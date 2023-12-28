@@ -29,7 +29,7 @@ export const MobileNavbar = ({
         {sectionButtons.map((button) => (
           <HeaderButton
             key={`${button.text}`}
-            onClick={button.link}
+            hRef={button.link}
             bold="heavy"
             size={14}
             link

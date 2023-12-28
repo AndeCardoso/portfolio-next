@@ -36,10 +36,10 @@ export const HomeSection = ({ name, roles, bio }: IHomeSectionProps) => {
       </TextTyping>
       <Text size={16}>{bio}</Text>
       <GroupButton>
-        <Button icon={<ChevronRight size={28} />} link onClick="#contact">
+        <Button icon={<ChevronRight size={28} />} link hRef="#contact">
           Contact me
         </Button>
-        <Button icon={<ChevronDown size={28} />} link onClick="#about" />
+        <Button icon={<ChevronDown size={28} />} link hRef="#about" />
       </GroupButton>
     </Container>
   );

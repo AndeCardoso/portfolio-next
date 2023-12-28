@@ -50,7 +50,7 @@ export const StyledButton = styled.button<TStyledButtonProps>`
   border: 0.2px solid ${colors.PRIMARY};
 
   svg {
-    fill: whitesmoke;
+    fill: ${colors.WHITE};
   }
 
   &:hover ${StyledText} {

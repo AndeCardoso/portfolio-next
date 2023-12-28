@@ -15,10 +15,10 @@ export const SocialSidebar = ({ socialList }: ISocialSidebarProps) => {
           <Button
             key={`${index}`}
             icon={item.icon}
-            onClick={item.link}
+            hRef={item.link}
             target="_blank"
             link
-          ></Button>
+          />
         ))}
       </Wrapper>
     </Container>

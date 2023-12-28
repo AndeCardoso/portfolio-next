@@ -38,7 +38,7 @@ export const Navbar = ({
         sectionButtons={sectionButtons}
         resumeButton={
           <HeaderButton
-            onClick={"/pdf/AndersonCardoso-Resume.pdf"}
+            hRef={"/pdf/AndersonCardoso-Resume.pdf"}
             bold="heavy"
             icon={<Download size={18} style={{ marginLeft: 8 }} />}
             size={14}
@@ -53,7 +53,7 @@ export const Navbar = ({
         {sectionButtons.map((button) => (
           <HeaderButton
             key={`${button.text}`}
-            onClick={button.link}
+            hRef={button.link}
             bold="heavy"
             size={14}
             link
@@ -62,7 +62,7 @@ export const Navbar = ({
           </HeaderButton>
         ))}
         <DownloadButton
-          onClick="/pdf/AndersonCardoso-Resume.pdf"
+          hRef="/pdf/AndersonCardoso-Resume.pdf"
           icon={<Download size={18} style={{ marginLeft: 8 }} />}
           size={14}
           bold="heavy"
