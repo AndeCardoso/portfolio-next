@@ -13,7 +13,7 @@ export const StyledInput = styled(Input)`
     border: 1px solid ${colors.PRIMARY};
     border-radius: 8px;
     background-color: transparent;
-    color: whitesmoke;
+    color: ${colors.WHITE};
 
     &:focus-visible {
       outline: 0;
@@ -21,6 +21,6 @@ export const StyledInput = styled(Input)`
   }
 
   label {
-    color: whitesmoke;
+    color: ${colors.WHITE};
   }
 `;

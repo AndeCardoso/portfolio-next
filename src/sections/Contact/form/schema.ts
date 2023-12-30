@@ -5,13 +5,13 @@ export const contactFormSchema = yup.object().shape({
     .string()
     .required("Who's knocking?")
     .min(3, "Why so short? Don't be shy...")
-    .max(144, "Well that's a little so much longer, take it easy..."),
+    .max(144, "Well this's a little so much longer, take it easy..."),
 
   email: yup
     .string()
     .required("C'mon! How could I answer you??")
-    .email("Are you sure about that address?")
-    .max(144, "Well that's a little so much longer, take it easy..."),
+    .email("Are you sure about this address?")
+    .max(144, "Well this's a little so much longer, take it easy..."),
 
   message: yup
     .string()
