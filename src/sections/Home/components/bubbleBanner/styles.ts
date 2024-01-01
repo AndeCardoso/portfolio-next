@@ -11,6 +11,7 @@ export const Container = styled.h1`
   border-radius: 264px;
   margin: 40px 0 0 -230px;
   background-color: ${colors.BACKGROUND_COLOR};
+  white-space: pre-line;
 
   @media screen and (max-width: ${breakpointScreenEnum.MOBILE}px) {
     font-size: 36px;

@@ -1,6 +1,6 @@
 import { Instagram, Linkedin, Github } from "styled-icons/boxicons-logos";
 
-export const name = "Anderson Cardoso";
+export const name = "Anderson\nCardoso";
 
 export const position = "Software engenner";
 
