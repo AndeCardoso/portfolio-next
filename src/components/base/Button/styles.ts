@@ -4,7 +4,7 @@ import { Text } from "../Text";
 import Link from "next/link";
 
 type TStyledButtonProps = {
-  onlyIcon?: boolean;
+  $onlyIcon?: boolean;
 };
 
 export const StyledText = styled(Text)`
@@ -15,7 +15,7 @@ export const StyledLink = styled(Link)<TStyledButtonProps>`
   display: flex;
   align-items: center;
   width: fit-content;
-  padding: ${({ onlyIcon }) => (onlyIcon ? "16px" : "16px 32px")};
+  padding: ${({ $onlyIcon }) => ($onlyIcon ? "16px" : "16px 32px")};
   cursor: pointer;
   border-radius: 8px;
   background-color: transparent;
@@ -43,14 +43,14 @@ export const StyledButton = styled.button<TStyledButtonProps>`
   display: flex;
   align-items: center;
   width: fit-content;
-  padding: ${({ onlyIcon }) => (onlyIcon ? "16px" : "16px 32px")};
+  padding: ${({ $onlyIcon }) => ($onlyIcon ? "16px" : "16px 32px")};
   cursor: pointer;
   border-radius: 8px;
   background-color: transparent;
   border: 0.2px solid ${colors.PRIMARY};
 
   svg {
-    fill: whitesmoke;
+    fill: ${colors.WHITE};
   }
 
   &:hover ${StyledText} {

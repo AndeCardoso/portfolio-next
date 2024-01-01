@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
+  experimental: {
+    serverComponentsExternalPackages: ['resend'],
+  },
 	images: {
 		dangerouslyAllowSVG: true,
 		contentDispositionType: "attachment",

@@ -13,15 +13,26 @@ export const StyledTextarea = styled(Textarea)`
     border-radius: 8px;
     border: 1px solid ${colors.PRIMARY};
     background-color: transparent;
-    color: whitesmoke;
+    color: ${colors.WHITE};
     resize: none;
 
     &:focus-visible {
       outline: 0;
     }
+
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: ${colors.PRIMARY};
+      border-radius: 50px;
+    }
   }
 
   label {
-    color: whitesmoke;
+    color: ${colors.WHITE};
   }
 `;

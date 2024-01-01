@@ -20,16 +20,16 @@ export const MobileNavbar = ({
 
   return (
     <>
-      <BurguerButton isOpen={isOpen} onClick={humburguerToggle}>
+      <BurguerButton $isOpen={isOpen} onClick={humburguerToggle}>
         <div />
         <div />
         <div />
       </BurguerButton>
-      <Container isOpen={isOpen}>
+      <Container $isOpen={isOpen}>
         {sectionButtons.map((button) => (
           <HeaderButton
             key={`${button.text}`}
-            onClick={button.link}
+            hRef={button.link}
             bold="heavy"
             size={14}
             link

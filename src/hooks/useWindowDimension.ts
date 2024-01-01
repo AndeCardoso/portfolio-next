@@ -2,12 +2,12 @@ import { breakpointScreenEnum } from "@src/constants/breakpoints";
 import { useState, useEffect } from "react";
 
 const getWindowDimensions = () => {
-  const { innerWidth: width, innerHeight: height } = window;
-  const isMobile = width < breakpointScreenEnum.MOBILE;
+  let isMobile = false;
+  if (typeof window !== "undefined") {
+    isMobile = window.innerWidth < breakpointScreenEnum.MOBILE;
+  }
 
   return {
-    width,
-    height,
     isMobile,
   };
 };

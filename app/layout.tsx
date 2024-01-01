@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import StyledComponentsRegistry from "@src/lib/registry";
 import GlobalStyle from "@src/global/styledGlobal";
+import { Toaster } from "react-hot-toast";
+import { toastOptions } from "@src/constants/toastStyle";
 
 export const metadata: Metadata = {
   title: "Anderson Cardoso",
@@ -26,6 +28,7 @@ export default function RootLayout({
       <body>
         <StyledComponentsRegistry>
           <GlobalStyle />
+          <Toaster toastOptions={toastOptions} />
           {children}
         </StyledComponentsRegistry>
       </body>
