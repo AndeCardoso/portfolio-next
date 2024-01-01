@@ -129,19 +129,15 @@ export const experiencesData = [
 
 export const reviewsData = [
   {
-    name: "Some Mc'one",
+    avatar: "/reviwers/01.jpg",
+    name: "Eloisa Morais",
     role: "Mobile developer",
     quote:
-      "Excellent all around! What stood out most was Jake's excellent service. He made sure our order was placed in time, even though we were ordering on What stood out most was Jake's excellent service. He made sure our order was placed in time, even though we were ordering on What stood out most was Jake's excellent service. He made sure our order was placed in time, even though we were ordering on a holiday.",
+      "Excellent all around! What stood out most was Jake's excellent service. He made sure our order was placed in time, even though we were ordering on What stood out most was Jake's excellent service.",
   },
   {
-    name: "Anny Boddy",
-    role: "Web developer",
-    quote:
-      "Excellent all around! What stood out most was Jake's excellent service. He made sure our order was placed in time, even though we were ordering on a holiday.",
-  },
-  {
-    name: "Anny Boddy",
+    avatar: "/reviwers/02.jpg",
+    name: "Everton Xavier",
     role: "Web developer",
     quote:
       "Excellent all around! What stood out most was Jake's excellent service. He made sure our order was placed in time, even though we were ordering on a holiday.",
