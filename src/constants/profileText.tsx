@@ -4,7 +4,7 @@ export const name = "Anderson Cardoso";
 
 export const position = "Software engenner";
 
-export const bio = `Hey there, Anderson Cardoso here!\nI'm a web and mobile front-end developer, working with React, Next and React Native, but I've ever worked with Angular and Node as well.\nI'm always concerned about pattern and quality of code and user experience, so that I use Typescript and always keep the layouts overviewed by planned.`;
+export const bio = `Hello there, my name is Anderson Cardoso!\n\n I have been working as a web and mobile front-end developer since 2021, specializing in React, React Native, and Next.js, all implemented with TypeScript.\nI also have prior experience with Angular 7, and Node.js where I worked on full-stack projects as a self-employed freelancer.`;
 
 export const roles = [
   "Front-End Developer",
@@ -22,16 +22,9 @@ export const contactInfo = {
   "e-mail": "andersoncardoso.dev@gmail.com",
 };
 
-export const aboutText = `I consider myself a self-taught person because I can learn with
-relative ease and speed. Often, by simply analyzing something that
-is already in operation and addressing a need, I can benefit much
-more than in a theoretical class with generic example projects.
-With a great aptitude for artistic activities, I have always been
-recognized as the 'Front-End Guy,' creative and innovative in
-ideas, capable of adding personality to everything I do.\n\nHowever,
-I also see myself as very logical and rational. I always think
-twice if a task could be better utilized, if there isn't a more
-agile and efficient solution for a process.`;
+export const aboutText = `I consider myself an easy-going person with the ability to interact effectively with various types of people. I enjoy learning from others and exploring different approaches to problem-solving. I am always eager to assist and support others with their tasks and challenges.\n
+In 2012, I attended the Lutheran University of Brazil, also known as ULBRA, focusing on C# with ASP.NET MVC and Windows Phone development. Although I didn't complete the program at that time, I am currently returning to finish my degree.\n
+My priorities include maintaining code quality and ensuring a positive user experience. I take pride in my proficiency in identifying and resolving bugs.`;
 
 export const techIconList = [
   {
@@ -120,7 +113,7 @@ export const experiencesData = [
       "A company specializing in technological solutions for the insurance market.\nDeveloping systems to make life easier for insurance brokers.\nMulticalculation for Auto, Motorcycle, Truck, Home, Condominium, Business and Individual Life.\nManagement system for dynamic insurance brokers.",
   },
   {
-    company: "Self Employee",
+    company: "Self Employed",
     period: "2021/02",
     description:
       "Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",

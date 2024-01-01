@@ -1,4 +1,3 @@
-"use client";
 import React, { ReactNode } from "react";
 
 export interface ITextProps {
@@ -31,6 +30,7 @@ export const Text = ({
     color: color,
     fontWeight: bold ? fontWeightBold[bold] : 200,
     textTransform: capsLock ? "uppercase" : "none",
+    whiteSpace: "pre-line",
   };
 
   return (
