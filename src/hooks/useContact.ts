@@ -1,5 +1,5 @@
+import { HttpStatusCode } from "@app/@types/status";
 import toast from "react-hot-toast";
-import { Resend } from "resend";
 export interface IContactForm {
   name: string;
   email: string;
@@ -15,24 +15,22 @@ export const defaultContactForm = {
 export const useContact = () => {
   const onSubmitForm = async (data: IContactForm) => {
     try {
-      const resend = new Resend(`${process.env.NEXT_PUBLIC_RESEND_API_KEY}`);
-
-      const { data: response, error } = await resend.emails.send({
-        from: data.email,
-        to: "andersoncardoso.dev@gmail.com",
-        subject: `Contact from ${data.name}`,
-        html: data.message,
+      const response = await fetch("http://localhost:3000/api/contact", {
+        headers: {
+          "Content-Type": "application/json",
+        },
+        method: "POST",
+        body: JSON.stringify(data),
       });
 
-      if (error) {
-        toast.error("Something has gone wrong!");
+      if (response.status === HttpStatusCode.ok) {
+        toast.success("Message sent");
+        return;
       }
 
-      if (response) {
-        toast.error("Message sent");
-      }
+      toast.error("Something has gone wrong, try again!");
     } catch (error) {
-      toast.error("Something has gone wrong!");
+      toast.error("Something has gone wrong, try again later!");
     }
   };
 
