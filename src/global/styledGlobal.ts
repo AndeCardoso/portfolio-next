@@ -9,6 +9,17 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     scroll-behavior: smooth;
     background-color: ${colors.BACKGROUND_COLOR};
+
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+    &::-webkit-scrollbar-track {
+      background:  ${colors.HEADER_BACKGROUND};
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: ${colors.PRIMARY};
+      border-radius: 50px;
+    }
   };
   h1, h2, h3, h4, p, span {
     color: white;
