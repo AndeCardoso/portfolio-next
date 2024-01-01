@@ -7,6 +7,7 @@ interface IReviewsProps {
 }
 
 export interface IReviewsData {
+  avatar: string;
   name: string;
   role: string;
   quote: string;
