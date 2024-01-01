@@ -1,4 +1,3 @@
-import React from "react";
 import { IExperienceData } from "../..";
 import { Container, DescriptionText, PeriodText, Top } from "./styles";
 import { Text } from "@components/base/Text";

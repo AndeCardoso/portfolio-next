@@ -5,11 +5,12 @@ import { ScrollSide } from "@components/ScrollSide";
 import { Divisor } from "@components/base/Divisor";
 import { Navbar } from "@components/Navbar";
 import { Section } from "@components/Section";
-import { Text } from "@components/base/Text";
 
 import { About } from "@sections/About";
-import { HomeSection } from "@sections/Home";
 import { Contact } from "@sections/Contact";
+import { Reviews } from "@sections/Reviews";
+import { HomeSection } from "@sections/Home";
+import { Experience } from "@sections/Experiences";
 import { ITechIcon, Technologies } from "@sections/Technologies";
 
 import { Container, Main } from "./styles";
@@ -27,8 +28,6 @@ import {
   experiencesData,
   reviewsData,
 } from "@constants/profileText";
-import { Experience } from "@sections/Experience";
-import { Reviews } from "@sections/Reviews";
 
 export default function Home() {
   return (

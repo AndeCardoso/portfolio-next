@@ -12,6 +12,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
+  margin-right: 32px;
 `;
 
 export const Author = styled.div`
