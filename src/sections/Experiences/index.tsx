@@ -1,4 +1,3 @@
-import React from "react";
 import { CarouselSection } from "@components/Carousel";
 import { ExperienceItem } from "./components/CarouselItem";
 

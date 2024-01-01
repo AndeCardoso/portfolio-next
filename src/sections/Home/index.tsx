@@ -15,16 +15,9 @@ interface IHomeSectionProps {
 }
 
 export const HomeSection = ({ name, roles, bio }: IHomeSectionProps) => {
-  const firstName = name.split(" ")[0];
-  const lastName = name.split(" ")[1];
-
   return (
     <Container>
-      <BubbleBanner>
-        {firstName}
-        <br />
-        {lastName}
-      </BubbleBanner>
+      <BubbleBanner>{name}</BubbleBanner>
       <TextTyping
         typingConfig={typingRolesConfig}
         color={colors.PRIMARY}

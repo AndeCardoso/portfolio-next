@@ -55,16 +55,17 @@ export const CarouselSection = ({ children }: TCarouselProps) => {
         arrows={false}
         ssr
         renderButtonGroupOutside
+        infinite
+        transitionDuration={500}
+        partialVisbile={false}
+        itemClass="carousel-item"
+        containerClass="carousel-container"
         customButtonGroup={
           <ButtonGroup
             next={function (): void {}}
             previous={function (): void {}}
           />
         }
-        transitionDuration={500}
-        partialVisbile={false}
-        itemClass="carousel-item"
-        containerClass="carousel-container"
       >
         {children}
       </Carousel>

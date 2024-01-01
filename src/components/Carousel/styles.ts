@@ -35,9 +35,6 @@ export const Container = styled.section`
       max-width: 750px;
     }
   }
-  .carousel-item {
-    margin-right: 24px;
-  }
 
   @media screen and (max-width: ${breakpointScreenEnum.MOBILE}px) {
     margin-top: 0;
