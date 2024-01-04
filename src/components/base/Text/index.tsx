@@ -1,3 +1,4 @@
+import { poppins } from "@app/fonts";
 import React, { ReactNode } from "react";
 
 export interface ITextProps {
@@ -25,7 +26,7 @@ export const Text = ({
   ...rest
 }: ITextProps) => {
   const stylesProps: React.CSSProperties = {
-    fontFamily: "Poppins",
+    fontFamily: poppins.style.fontFamily,
     fontSize: size ? `${size / 16}rem` : "1rem",
     color: color,
     fontWeight: bold ? fontWeightBold[bold] : 200,

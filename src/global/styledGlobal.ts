@@ -4,7 +4,7 @@ import { colors } from "./colors";
 
 const GlobalStyle = createGlobalStyle`
   html, body {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-poppins);
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
@@ -22,7 +22,8 @@ const GlobalStyle = createGlobalStyle`
     }
   };
   h1, h2, h3, h4, p, span {
-    color: white;
+    font-family: var(--font-poppins);
+    color: ${colors.WHITE};
     margin: 0;
   }
   svg {
