@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useRef } from "react";
 import { ITextProps, fontWeightBold } from "../Text";
+import { poppins } from "@app/fonts";
 import Typed from "typed.js";
 
 interface ITextTypingProps extends ITextProps {
@@ -19,8 +20,8 @@ export const TextTyping = ({
   const typingRolesRef = useRef(null);
 
   const stylesProps: React.CSSProperties = {
-    fontFamily: "Poppins",
-    fontSize: size || 16,
+    fontFamily: poppins.style.fontFamily,
+    fontSize: size ? `${size / 16}rem` : "1rem",
     color: color,
     fontWeight: bold ? fontWeightBold[bold] : 200,
     textTransform: capsLock ? "uppercase" : "none",

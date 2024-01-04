@@ -1,6 +1,7 @@
+import { getAge } from "@src/utils/getAge";
 import { Instagram, Linkedin, Github } from "styled-icons/boxicons-logos";
 
-export const name = "Anderson\nCardoso";
+export const name = "Anderson\nMonteiro";
 
 export const position = "Software engenner";
 
@@ -14,7 +15,7 @@ export const roles = [
 ];
 
 export const contactInfo = {
-  age: new Date().getFullYear() - 1994,
+  age: getAge("02/12/1994"),
   residence: "Brazil",
   "main role": "Front-End",
   address: "Florianópolis",
