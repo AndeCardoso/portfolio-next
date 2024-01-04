@@ -1,13 +1,14 @@
 import { colors } from "@src/global/colors";
 import { Textarea } from "@nextui-org/react";
 import styled from "styled-components";
+import { poppins } from "@app/fonts";
 
 export const StyledTextarea = styled(Textarea)`
   textarea {
     width: 91%;
     display: flex;
     flex-direction: column;
-    font-family: Poppins;
+    font-family: ${poppins.style.fontFamily};
     font-size: 16px;
     padding: 16px;
     border-radius: 8px;
@@ -34,5 +35,6 @@ export const StyledTextarea = styled(Textarea)`
 
   label {
     color: ${colors.WHITE};
+    font-family: ${poppins.style.fontFamily};
   }
 `;
