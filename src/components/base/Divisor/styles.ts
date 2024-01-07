@@ -1,4 +1,4 @@
-import { colors } from "@src/global/colors";
+import { colors } from "@global/colors";
 import styled from "styled-components";
 
 export const StyledDivisor = styled.div`

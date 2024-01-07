@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { breakpointScreenEnum } from "@src/constants/breakpoints";
+import { breakpointScreenEnum } from "@constants/breakpoints";
 
 export const Container = styled.section`
   position: fixed;
@@ -19,7 +19,7 @@ export const Container = styled.section`
 export const ImageBanner = styled.div`
   width: 100%;
   height: 100%;
-  background-image: url("/man.jpg");
+  background-image: url("/backgroundBanner.jpg");
   background-position: center center;
   background-size: cover;
   -webkit-filter: grayscale(100%);

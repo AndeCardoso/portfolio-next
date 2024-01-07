@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import StyledComponentsRegistry from "@src/lib/registry";
-import GlobalStyle from "@src/global/styledGlobal";
+import GlobalStyle from "@global/styledGlobal";
 import { Toaster } from "react-hot-toast";
-import { toastOptions } from "@src/constants/toastStyle";
+import { toastOptions } from "@constants/toastStyle";
 
 export const metadata: Metadata = {
   title: "Anderson Cardoso",
@@ -17,12 +17,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;700&display=swap"
-          rel="stylesheet"
-        />
         <link rel="icon" href="/favicon.png" />
       </head>
       <body>

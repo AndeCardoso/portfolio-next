@@ -8,8 +8,8 @@ import {
   QuoteText,
 } from "./styles";
 import { Text } from "@components/base/Text";
-import { colors } from "@src/global/colors";
-import { Avatar } from "@src/components/base/Avatar";
+import { colors } from "@global/colors";
+import { Avatar } from "@components/base/Avatar";
 
 interface IReviewsItemProps {
   data: IReviewsData;

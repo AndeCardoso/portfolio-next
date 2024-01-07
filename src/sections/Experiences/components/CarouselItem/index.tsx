@@ -1,7 +1,7 @@
 import { IExperienceData } from "../..";
 import { Container, DescriptionText, PeriodText, Top } from "./styles";
 import { Text } from "@components/base/Text";
-import { colors } from "@src/global/colors";
+import { colors } from "@global/colors";
 
 interface IExperienceItemProps {
   data: IExperienceData;

@@ -1,4 +1,4 @@
-import { colors } from "@src/global/colors";
+import { colors } from "@global/colors";
 import styled from "styled-components";
 import { Text } from "../Text";
 import Link from "next/link";

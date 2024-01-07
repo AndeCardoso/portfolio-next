@@ -1,10 +1,11 @@
 import React from "react";
 
 import { Key, Row, Table, Value } from "./styles";
-import { colors } from "@src/global/colors";
+import { colors } from "@global/colors";
+import { IInfoList } from "@app/@types/infos";
 
 interface IAttributesTableProps {
-  data: Object;
+  data: IInfoList;
 }
 
 export const AttributesTable = ({ data }: IAttributesTableProps) => {
@@ -14,10 +15,10 @@ export const AttributesTable = ({ data }: IAttributesTableProps) => {
         return (
           <Row key={`${item[0]}`}>
             <Key size={14} bold="medium" color={colors.PRIMARY} capsLock>
-              {item[0]}:
+              {item[1].LABEL}:
             </Key>
             <Value size={14} bold="medium">
-              {item[1]}
+              {item[1].INFO}
             </Value>
           </Row>
         );

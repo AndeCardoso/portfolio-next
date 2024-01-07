@@ -1,5 +1,5 @@
-import { breakpointScreenEnum } from "@src/constants/breakpoints";
-import { colors } from "@src/global/colors";
+import { breakpointScreenEnum } from "@constants/breakpoints";
+import { colors } from "@global/colors";
 import styled from "styled-components";
 import { poppins } from "@app/fonts";
 

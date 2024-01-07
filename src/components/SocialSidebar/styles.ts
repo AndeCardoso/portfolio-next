@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { breakpointScreenEnum } from "@src/constants/breakpoints";
-import { colors } from "@src/global/colors";
+import { breakpointScreenEnum } from "@constants/breakpoints";
+import { colors } from "@global/colors";
 
 export const Container = styled.section`
   width: 90px;

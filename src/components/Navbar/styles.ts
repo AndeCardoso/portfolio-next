@@ -1,8 +1,8 @@
-import { colors } from "@src/global/colors";
+import { colors } from "@global/colors";
 import styled from "styled-components";
 import { Text } from "../base/Text";
 import { Button } from "../base/Button";
-import { breakpointScreenEnum } from "@src/constants/breakpoints";
+import { breakpointScreenEnum } from "@constants/breakpoints";
 
 export const Container = styled.div`
   width: 92%;
@@ -20,6 +20,13 @@ export const Container = styled.div`
     background-color: transparent;
     width: 95%;
     padding: 0;
+  }
+`;
+
+export const LangContainer = styled.div`
+  display: flex;
+  @media screen and (max-width: ${breakpointScreenEnum.MOBILE}px) {
+    display: none;
   }
 `;
 

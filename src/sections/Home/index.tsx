@@ -6,7 +6,10 @@ import { BubbleBanner } from "./components/bubbleBanner";
 import { typingRolesConfig } from "./constants/typingRolesConfig";
 import { ChevronDown, ChevronRight } from "styled-icons/evaicons-solid";
 import { TextTyping } from "@components/base/TextTyping";
-import { colors } from "@src/global/colors";
+import { colors } from "@global/colors";
+import { TLocaleTypes, getDictionary } from "@app/[lang]/dictionaries";
+import { usePathname } from "next/navigation";
+import { removeSlash } from "@utils/removeSlash";
 
 interface IHomeSectionProps {
   name: string;
@@ -15,8 +18,10 @@ interface IHomeSectionProps {
 }
 
 export const HomeSection = ({ name, roles, bio }: IHomeSectionProps) => {
+  const pathname = usePathname();
+  const dict = getDictionary(removeSlash(pathname) as TLocaleTypes);
   return (
-    <Container>
+    <Container id="home">
       <BubbleBanner>{name}</BubbleBanner>
       <TextTyping
         typingConfig={typingRolesConfig}
@@ -30,7 +35,7 @@ export const HomeSection = ({ name, roles, bio }: IHomeSectionProps) => {
       <Text size={16}>{bio}</Text>
       <GroupButton>
         <Button icon={<ChevronRight size={28} />} link hRef="#contact">
-          Contact me
+          {dict.MAIN.ABOUT_ME.BUTTON}
         </Button>
         <Button icon={<ChevronDown size={28} />} link hRef="#about" />
       </GroupButton>

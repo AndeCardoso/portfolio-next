@@ -1,5 +1,5 @@
-import { poppins } from "@app/fonts";
-import React, { ReactNode } from "react";
+import React, { CSSProperties, ReactNode } from "react";
+import { Paragraph } from "./styles";
 
 export interface ITextProps {
   children: string | string[] | ReactNode;
@@ -25,8 +25,7 @@ export const Text = ({
   capsLock,
   ...rest
 }: ITextProps) => {
-  const stylesProps: React.CSSProperties = {
-    fontFamily: poppins.style.fontFamily,
+  const stylesProps: CSSProperties = {
     fontSize: size ? `${size / 16}rem` : "1rem",
     color: color,
     fontWeight: bold ? fontWeightBold[bold] : 200,
@@ -35,8 +34,8 @@ export const Text = ({
   };
 
   return (
-    <p style={stylesProps} {...rest}>
+    <Paragraph style={stylesProps} {...rest}>
       {children}
-    </p>
+    </Paragraph>
   );
 };

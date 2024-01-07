@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { useForm } from "react-hook-form";
 import { Button } from "@components/base/Button";
@@ -6,14 +7,20 @@ import {
   defaultContactForm,
   useContact,
 } from "@hooks/useContact";
-import { ChevronRight } from "styled-icons/evaicons-solid";
-import { Container } from "./styles";
 import { ControlledInput } from "@components/base/ControlledInput";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { contactFormSchema } from "./schema";
+import { TLocaleTypes, getDictionary } from "@app/[lang]/dictionaries";
+import { removeSlash } from "@utils/removeSlash";
+import { usePathname } from "next/navigation";
+
+import { ChevronRight } from "styled-icons/evaicons-solid";
+
+import { Container } from "./styles";
 
 export const ContactForm = () => {
-  const { onSubmitForm } = useContact();
+  const pathname = usePathname();
+  const dict = getDictionary(removeSlash(pathname) as TLocaleTypes);
+  const { onSubmitForm, contactFormSchema } = useContact();
   const {
     control,
     handleSubmit,
@@ -29,22 +36,22 @@ export const ContactForm = () => {
       <ControlledInput
         control={control}
         name="name"
-        label="Name"
-        placeholder="Write your full name"
+        label={dict.MAIN.CONTACT_ME.FORM.NAME.LABEL}
+        placeholder={dict.MAIN.CONTACT_ME.FORM.NAME.PLACEHOLDER}
         error={errors.name?.message}
       />
       <ControlledInput
         control={control}
         name="email"
-        label="E-mail"
-        placeholder="Write your best e-mail"
+        label={dict.MAIN.CONTACT_ME.FORM.EMAIL.LABEL}
+        placeholder={dict.MAIN.CONTACT_ME.FORM.EMAIL.PLACEHOLDER}
         error={errors.email?.message}
       />
       <ControlledInput
         control={control}
         name="message"
-        label="Message"
-        placeholder="To write"
+        label={dict.MAIN.CONTACT_ME.FORM.MESSAGE.LABEL}
+        placeholder={dict.MAIN.CONTACT_ME.FORM.MESSAGE.PLACEHOLDER}
         error={errors.message?.message}
         minRows={6}
         textArea
@@ -53,7 +60,7 @@ export const ContactForm = () => {
         icon={<ChevronRight size={28} />}
         onClick={handleSubmit(onSubmitForm)}
       >
-        Send message
+        {dict.MAIN.CONTACT_ME.BUTTON}
       </Button>
     </Container>
   );

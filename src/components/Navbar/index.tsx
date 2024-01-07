@@ -3,22 +3,19 @@ import {
   Container,
   DownloadButton,
   HeaderButton,
+  LangContainer,
   WrapperBrand,
   WrapperButtons,
 } from "./styles";
 import { Download } from "styled-icons/evaicons-solid";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import { MobileNavbar } from "../MobileNavbar";
+import { LangButtons } from "../LangButtons";
 
 interface INavbarProps {
   brandName: string;
-  brandImage: StaticImageData;
-  sectionButtons: ISectionButton[];
-}
-
-export interface ISectionButton {
-  text: string;
-  link: string;
+  brandImage: string;
+  sectionButtons: Object;
 }
 
 export const Navbar = ({
@@ -35,7 +32,7 @@ export const Navbar = ({
         </BrandName>
       </WrapperBrand>
       <MobileNavbar
-        sectionButtons={sectionButtons}
+        sectionButtons={sectionButtons.SECTION_BUTTONS}
         resumeButton={
           <HeaderButton
             hRef={"/pdf/AndersonCardoso-Resume.pdf"}
@@ -45,22 +42,25 @@ export const Navbar = ({
             link
             target="_blank"
           >
-            Resumé
+            {sectionButtons.RESUME}
           </HeaderButton>
         }
       />
       <WrapperButtons>
-        {sectionButtons.map((button) => (
+        {Object.entries(sectionButtons.SECTION_BUTTONS).map((button) => (
           <HeaderButton
-            key={`${button.text}`}
-            hRef={button.link}
+            key={`${button[0]}`}
+            hRef={`#${button[0].toLocaleLowerCase()}`}
             bold="heavy"
             size={14}
             link
           >
-            {button.text}
+            {button[1]}
           </HeaderButton>
         ))}
+        <LangContainer>
+          <LangButtons />
+        </LangContainer>
         <DownloadButton
           hRef="/pdf/AndersonCardoso-Resume.pdf"
           icon={<Download size={18} style={{ marginLeft: 8 }} />}
@@ -69,7 +69,7 @@ export const Navbar = ({
           link
           target="_blank"
         >
-          Resumé
+          {sectionButtons.RESUME}
         </DownloadButton>
       </WrapperButtons>
     </Container>

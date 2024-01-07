@@ -14,57 +14,67 @@ import { Experience } from "@sections/Experiences";
 import { ITechIcon, Technologies } from "@sections/Technologies";
 
 import { Container, Main } from "./styles";
-import BrandLogo from "@public/logo-mock.png";
+import { TLocaleTypes, getDictionary } from "./dictionaries";
 
 import {
-  bio,
-  name,
-  roles,
-  aboutText,
-  contactInfo,
   techIconList,
-  headerSectionsButtons,
   socialButtons,
   experiencesData,
   reviewsData,
 } from "@constants/profileText";
 
-export default function Home() {
+export default function Home({
+  params: { lang },
+}: {
+  params: { lang: TLocaleTypes };
+}) {
+  const dict = getDictionary(lang);
   return (
     <Main>
       <Navbar
-        brandName={name}
-        brandImage={BrandLogo}
-        sectionButtons={headerSectionsButtons}
+        brandName={dict.MAIN.HEADER.NAME}
+        brandImage={"/logo.png"}
+        sectionButtons={dict.MAIN.NAVBAR}
       />
       <Container>
         <FixedBanner />
         <ScrollSide>
-          <HomeSection name={name} roles={roles} bio={bio} />
+          <HomeSection
+            name={dict.MAIN.HEADER.NAME}
+            roles={dict.MAIN.HEADER.ROLES}
+            bio={dict.MAIN.HEADER.SHORT_BIO}
+          />
           <Divisor />
-          <Section title="About Me" description="My history" linked="about">
-            <About text={aboutText} attributes={contactInfo} />
+          <Section
+            title={dict.MAIN.ABOUT_ME.TITLE}
+            description={dict.MAIN.ABOUT_ME.DESCRIPTION}
+            linked="about"
+          >
+            <About
+              text={dict.MAIN.ABOUT_ME.TEXT}
+              attributes={dict.MAIN.ABOUT_ME.INFOS}
+            />
           </Section>
           <Divisor />
           <Section
-            title="Technologies"
-            description="Developing On"
+            title={dict.MAIN.TECHNOLOGIES.TITLE}
+            description={dict.MAIN.TECHNOLOGIES.DESCRIPTION}
             linked="technologies"
           >
             <Technologies iconsList={techIconList as ITechIcon[]} />
           </Section>
           <Divisor />
           <Section
-            title="Experiences"
-            description="Working with"
+            title={dict.MAIN.EXPERIENCES.TITLE}
+            description={dict.MAIN.EXPERIENCES.DESCRIPTION}
             linked="experiences"
           >
             <Experience experiencesList={experiencesData} />
           </Section>
           <Divisor />
           <Section
-            title="Reviews"
-            description="What co-workers say"
+            title={dict.MAIN.REVIEWS.TITLE}
+            description={dict.MAIN.REVIEWS.DESCRIPTION}
             linked="reviews"
           >
             <Reviews reviewsList={reviewsData} />
@@ -74,8 +84,15 @@ export default function Home() {
             <Text>teste</Text>
           </Section> */}
           <Divisor />
-          <Section title="Contact me" description="Call me" linked="contact">
-            <Contact infoList={contactInfo} />
+          <Section
+            title={dict.MAIN.CONTACT_ME.TITLE}
+            description={dict.MAIN.CONTACT_ME.DESCRIPTION}
+            linked="contact"
+          >
+            <Contact
+              infoList={dict.MAIN.ABOUT_ME.INFOS}
+              infoTitle={dict.MAIN.CONTACT_ME.INFOS}
+            />
           </Section>
         </ScrollSide>
         <SocialSidebar socialList={socialButtons} />

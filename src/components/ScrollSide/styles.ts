@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { colors } from "@src/global/colors";
-import { breakpointScreenEnum } from "@src/constants/breakpoints";
+import { colors } from "@global/colors";
+import { breakpointScreenEnum } from "@constants/breakpoints";
 
 export const Container = styled.section`
   padding-top: 7%;

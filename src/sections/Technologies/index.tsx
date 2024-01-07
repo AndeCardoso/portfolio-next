@@ -1,8 +1,8 @@
-import React, { Fragment, ReactNode } from "react";
+import React from "react";
 import { Text } from "@components/base/Text";
 import { Container, Wrapper } from "./styles";
 import { SVG, TTechIconTypes } from "@components/base/Svg";
-import { colors } from "@src/global/colors";
+import { colors } from "@global/colors";
 
 interface ITechnologiesProps {
   iconsList: ITechIcon[];

@@ -5,13 +5,14 @@ import { ContactForm } from "./form";
 
 interface IContactProps {
   infoList: Object;
+  infoTitle: Object;
 }
 
-export const Contact = ({ infoList }: IContactProps) => {
+export const Contact = ({ infoList, infoTitle }: IContactProps) => {
   return (
     <Container>
       <ContactForm />
-      <InfoContact infoList={infoList} />
+      <InfoContact infoList={infoList} infoTitle={infoTitle} />
     </Container>
   );
 };
