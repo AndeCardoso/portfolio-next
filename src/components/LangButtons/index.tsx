@@ -1,9 +1,9 @@
 "use client";
 import React, { useState } from "react";
-import { Container, StyledButton, StyledImage } from "./styles";
+import { Container, Divider, StyledButton } from "./styles";
 import { usePathname, useRouter } from "next/navigation";
 import { removeSlash } from "@utils/removeSlash";
-import { TLocaleTypes } from "@src/app/[lang]/dictionaries";
+import { TLocaleTypes } from "@app/[lang]/dictionaries";
 
 export const LangButtons = () => {
   const pathname = usePathname();
@@ -23,23 +23,14 @@ export const LangButtons = () => {
         $selected={selected === "en"}
         onClick={() => handleClick("en")}
       >
-        <StyledImage
-          src="/flags/en.png"
-          alt="England and United States flags"
-          width={30}
-          height={20}
-        />
+        EN
       </StyledButton>
+      <Divider />
       <StyledButton
         $selected={selected === "pt"}
         onClick={() => handleClick("pt")}
       >
-        <StyledImage
-          src="/flags/pt.png"
-          alt="Brazil and Portugal flags"
-          width={30}
-          height={20}
-        />
+        PT
       </StyledButton>
     </Container>
   );
