@@ -8,19 +8,19 @@ interface IExperienceItemProps {
 }
 
 export const ExperienceItem = ({
-  data: { company, period, description },
+  data: { COMPANY, PERIOD, DESCRIPTION },
 }: IExperienceItemProps) => {
   return (
     <Container>
       <Top>
         <PeriodText capsLock bold="medium" size={10} color={colors.PRIMARY}>
-          {period}
+          {PERIOD}
         </PeriodText>
         <Text size={34} bold="heavy">
-          {company}
+          {COMPANY}
         </Text>
       </Top>
-      <DescriptionText>{description}</DescriptionText>
+      <DescriptionText>{DESCRIPTION}</DescriptionText>
     </Container>
   );
 };

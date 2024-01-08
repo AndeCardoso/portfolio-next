@@ -2,10 +2,9 @@ import React from "react";
 
 import { Key, Row, Table, Value } from "./styles";
 import { colors } from "@global/colors";
-import { IInfoList } from "@app/@types/infos";
 
 interface IAttributesTableProps {
-  data: IInfoList;
+  data: Object;
 }
 
 export const AttributesTable = ({ data }: IAttributesTableProps) => {

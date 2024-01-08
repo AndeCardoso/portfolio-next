@@ -16,18 +16,18 @@ interface IReviewsItemProps {
 }
 
 export const ReviewItem = ({
-  data: { avatar, name, role, quote },
+  data: { AVATAR, NAME, ROLE, QUOTE },
 }: IReviewsItemProps) => {
   return (
     <Container>
       <Author>
-        <Avatar imageURL={avatar} size={80} />
+        <Avatar imageURL={AVATAR} size={80} />
         <div>
           <Text bold="heavy" size={20}>
-            {name}
+            {NAME}
           </Text>
           <Text bold="medium" size={12} color={colors.PRIMARY} capsLock>
-            {role}
+            {ROLE}
           </Text>
         </div>
       </Author>
@@ -35,7 +35,7 @@ export const ReviewItem = ({
         <Quotation bold="heavy" size={48} color={colors.PRIMARY}>
           &quot;
         </Quotation>
-        <QuoteText>{quote}</QuoteText>
+        <QuoteText>{QUOTE}</QuoteText>
       </QuoteContainer>
     </Container>
   );

@@ -7,17 +7,17 @@ interface IReviewsProps {
 }
 
 export interface IReviewsData {
-  avatar: string;
-  name: string;
-  role: string;
-  quote: string;
+  AVATAR: string;
+  NAME: string;
+  ROLE: string;
+  QUOTE: string;
 }
 
 export const Reviews = ({ reviewsList }: IReviewsProps) => {
   return (
     <CarouselSection>
       {reviewsList.map((item, index) => (
-        <ReviewItem key={`${item.name}-${index}`} data={item} />
+        <ReviewItem key={`${item.NAME}-${index}`} data={item} />
       ))}
     </CarouselSection>
   );

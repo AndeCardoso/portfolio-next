@@ -64,10 +64,46 @@ export const en = {
     EXPERIENCES: {
       TITLE: "Experiences",
       DESCRIPTION: "Working with",
+      CAROUSEL: [
+        {
+          COMPANY: "WeFit",
+          PERIOD: "Current",
+          DESCRIPTION:
+            "A Service Design company with the aim of transforming strategies, objectives and needs into experiences through technology.\nIn short, to help companies achieve greater precision and speed in their digital initiatives.\nWe position ourselves as strategic partners, helping our clients to build ideas, develop new concepts or solve problems through Web, Mobile, Chatbot and IOT solutions.",
+        },
+        {
+          COMPANY: "Infocap",
+          PERIOD: "2022/01",
+          DESCRIPTION:
+            "A company specializing in technological solutions for the insurance market.\nDeveloping systems to make life easier for insurance brokers.\nMulticalculation for Auto, Motorcycle, Truck, Home, Condominium, Business and Individual Life.\nManagement system for dynamic insurance brokers.",
+        },
+        {
+          COMPANY: "Self-Employed",
+          PERIOD: "2021/02",
+          DESCRIPTION:
+            "Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.\n Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
+        },
+      ],
     },
     REVIEWS: {
       TITLE: "Reviews",
       DESCRIPTION: "What co-workers say",
+      CAROUSEL: [
+        {
+          AVATAR: "/reviwers/01.jpg",
+          NAME: "Eloisa Morais",
+          ROLE: "Mobile developer",
+          QUOTE:
+            "Excellent all around! What stood out most was Jake's excellent service. He made sure our order was placed in time, even though we were ordering on What stood out most was Jake's excellent service.",
+        },
+        {
+          AVATAR: "/reviwers/02.jpg",
+          NAME: "Everton Xavier",
+          ROLE: "Tech leader / Web developer",
+          QUOTE:
+            "Excellent all around! What stood out most was Jake's excellent service. He made sure our order was placed in time, even though we were ordering on What stood out most was Jake's excellent service.",
+        },
+      ],
     },
     CONTACT_ME: {
       TITLE: "Contact me",

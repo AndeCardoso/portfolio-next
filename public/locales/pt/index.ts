@@ -22,7 +22,7 @@ export const pt = {
         "As vezes Back-End também...",
       ],
       SHORT_BIO:
-        "Salve! Meu nome é Anderson Cardoso!\n\n Eu trabalho como desenvolvedor web e mobile desde 2021, com foco em React, React Native, e Next.js, todos utilizando TypeScript.\nEu também ja trabalhei com Angular 7, e com Node.js quando desenvolvia projetos full-stack como freelancer.",
+        "Salve! Meu nome é Anderson Cardoso!\n\n Eu trabalho como desenvolvedor web e mobile desde 2021, com foco em React, React Native, e Next.js, todos utilizando TypeScript.\nTambém ja trabalhei com Angular 7, e com Node.js quando desenvolvia projetos full-stack como freelancer.",
       BUTTON_CONTACT_ME: "Entre em contato",
     },
     ABOUT_ME: {
@@ -64,10 +64,46 @@ export const pt = {
     EXPERIENCES: {
       TITLE: "Experiências",
       DESCRIPTION: "Trabalhando com",
+      CAROUSEL: [
+        {
+          COMPANY: "WeFit",
+          PERIOD: "Agora",
+          DESCRIPTION:
+            "Uma empresa de Design de Serviços com o propósito de transformar estratégias, objetivos e necessidades em experiências através de tecnologia.\n Resumidamente ajudar as empresas conseguirem mais precisão e velocidade nas iniciativas digitais.\nNos posicionamos como parceiros estratégicos, ajudando nossos clientes a construírem idéias, desenvolverem novos conceitos ou resolverem problemas por meio de soluções Web, Mobile, Chatbot e IOT.",
+        },
+        {
+          COMPANY: "Infocap",
+          PERIOD: "2022/01",
+          DESCRIPTION:
+            "Uma empresa expecializada em soluções tecnologicas para o mercado de seguros.\nDesenvolvendo sistemas para tornar mais facil a vida do corretor de seguros.Aplicações de multicalculo para Automoveis, Motocicletas, Caminhões, Casas, Condomínios, Negócios and Vida Individual.\nSistema de gereciamento dinâmico para corretores de seguro.",
+        },
+        {
+          COMPANY: "Self-Employed",
+          PERIOD: "2021/02",
+          DESCRIPTION:
+            "Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.\n Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
+        },
+      ],
     },
     REVIEWS: {
       TITLE: "Reviews",
       DESCRIPTION: "O que colegas dizem",
+      CAROUSEL: [
+        {
+          AVATAR: "/reviwers/01.jpg",
+          NAME: "Eloisa Morais",
+          ROLE: "Desenvolvedora Mobile",
+          QUOTE:
+            "Excellent all around! What stood out most was Jake's excellent service. He made sure our order was placed in time, even though we were ordering on What stood out most was Jake's excellent service.",
+        },
+        {
+          AVATAR: "/reviwers/02.jpg",
+          NAME: "Everton Xavier",
+          ROLE: "Líder técnico / Desenvolvedor Web",
+          QUOTE:
+            "Excellent all around! What stood out most was Jake's excellent service. He made sure our order was placed in time, even though we were ordering on What stood out most was Jake's excellent service.",
+        },
+      ],
     },
     CONTACT_ME: {
       TITLE: "Entre em contato",

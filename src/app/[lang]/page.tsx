@@ -16,12 +16,7 @@ import { ITechIcon, Technologies } from "@sections/Technologies";
 import { Container, Main } from "./styles";
 import { TLocaleTypes, getDictionary } from "./dictionaries";
 
-import {
-  techIconList,
-  socialButtons,
-  experiencesData,
-  reviewsData,
-} from "@constants/profileText";
+import { techIconList, socialButtons } from "@constants/profileText";
 
 export default function Home({
   params: { lang },
@@ -69,7 +64,7 @@ export default function Home({
             description={dict.MAIN.EXPERIENCES.DESCRIPTION}
             linked="experiences"
           >
-            <Experience experiencesList={experiencesData} />
+            <Experience experiencesList={dict.MAIN.EXPERIENCES.CAROUSEL} />
           </Section>
           <Divisor />
           <Section
@@ -77,7 +72,7 @@ export default function Home({
             description={dict.MAIN.REVIEWS.DESCRIPTION}
             linked="reviews"
           >
-            <Reviews reviewsList={reviewsData} />
+            <Reviews reviewsList={dict.MAIN.REVIEWS.CAROUSEL} />
           </Section>
           <Divisor />
           {/* <Section title="Projects" description="Last works" linked="projects">

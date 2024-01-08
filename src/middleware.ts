@@ -7,9 +7,11 @@ export function middleware(request: NextRequest) {
 
   if (
     [
+      "/logo.png",
       "/api/contact",
       "/favicon.png",
-      "/logo.png",
+      "/reviwers/01.jpg",
+      "/reviwers/02.jpg",
       "/backgroundBanner.jpg",
       "/pdf/AndersonCardoso-Resume.pdf",
     ].includes(pathname)
