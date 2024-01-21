@@ -1,5 +1,5 @@
 import React, { CSSProperties, ReactNode } from "react";
-import { Paragraph } from "./styles";
+import { poppins } from "@src/app/fonts";
 
 export interface ITextProps {
   children: string | string[] | ReactNode;
@@ -31,11 +31,12 @@ export const Text = ({
     fontWeight: bold ? fontWeightBold[bold] : 200,
     textTransform: capsLock ? "uppercase" : "none",
     whiteSpace: "pre-line",
+    fontFamily: poppins.style.fontFamily,
   };
 
   return (
-    <Paragraph style={stylesProps} {...rest}>
+    <p style={stylesProps} {...rest}>
       {children}
-    </Paragraph>
+    </p>
   );
 };
