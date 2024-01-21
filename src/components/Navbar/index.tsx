@@ -4,6 +4,7 @@ import {
   DownloadButton,
   HeaderButton,
   LangContainer,
+  StyledIcon,
   WrapperBrand,
   WrapperButtons,
 } from "./styles";
@@ -15,7 +16,19 @@ import { LangButtons } from "../LangButtons";
 interface INavbarProps {
   brandName: string;
   brandImage: string;
-  sectionButtons: Object;
+  sectionButtons: ISectionButtons;
+}
+
+interface ISectionButtons {
+  SECTION_BUTTONS: {
+    HOME: string;
+    ABOUT: string;
+    TECHNOLOGIES: string;
+    EXPERIENCES: string;
+    REVIEWS: string;
+    CONTACT: string;
+  };
+  RESUME: string;
 }
 
 export const Navbar = ({
@@ -37,7 +50,7 @@ export const Navbar = ({
           <HeaderButton
             hRef={"/pdf/AndersonCardoso-Resume.pdf"}
             bold="heavy"
-            icon={<Download size={18} style={{ marginLeft: 8 }} />}
+            icon={<StyledIcon name="download" size={18} />}
             size={14}
             link
             target="_blank"

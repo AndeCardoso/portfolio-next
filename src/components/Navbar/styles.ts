@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Text } from "../base/Text";
 import { Button } from "../base/Button";
 import { breakpointScreenEnum } from "@constants/breakpoints";
+import { Icon } from "../base/Icon";
 
 export const Container = styled.div`
   width: 92%;
@@ -36,19 +37,10 @@ export const WrapperBrand = styled.div`
   gap: 16px;
   cursor: pointer;
 
-  p {
-    width: 150px;
-    line-break: auto;
-  }
-
   @media screen and (max-width: ${breakpointScreenEnum.MOBILE}px) {
     background-color: ${colors.HEADER_BACKGROUND_OPACITY};
     padding: 15px;
     border-radius: 50px;
-  }
-  p {
-    width: 110px;
-    line-break: auto;
   }
 `;
 
@@ -73,4 +65,8 @@ export const WrapperButtons = styled.div`
 
 export const DownloadButton = styled(Button)`
   border-radius: 50px;
+`;
+
+export const StyledIcon = styled(Icon)`
+  margin-left: 8;
 `;
