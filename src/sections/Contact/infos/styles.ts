@@ -1,10 +1,10 @@
-import { Text } from "@src/components/base/Text";
-import { breakpointScreenEnum } from "@src/constants/breakpoints";
-import { colors } from "@src/global/colors";
+import { Text } from "@components/base/Text";
+import { colors } from "@global/colors";
 import styled from "styled-components";
 
 export const Container = styled.div`
   min-width: 40%;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   padding: 32px;

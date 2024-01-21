@@ -1,4 +1,5 @@
-import { breakpointScreenEnum } from "@src/constants/breakpoints";
+"use client";
+import { breakpointScreenEnum } from "@constants/breakpoints";
 import { useState, useEffect } from "react";
 
 const getWindowDimensions = () => {

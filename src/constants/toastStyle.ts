@@ -1,9 +1,11 @@
-import { colors } from "@src/global/colors";
+import { colors } from "@global/colors";
+import { poppins } from "@app/fonts";
 
 export const toastOptions = {
   className: "dark",
   loading: {
     style: {
+      fontFamily: poppins.style.fontFamily,
       padding: "16px",
       color: colors.WHITE,
       "background-color": colors.HEADER_BACKGROUND,
@@ -11,6 +13,7 @@ export const toastOptions = {
   },
   success: {
     style: {
+      fontFamily: poppins.style.fontFamily,
       padding: "16px",
       color: colors.WHITE,
       background: colors.SUCCESS_BACKGROUND,
@@ -18,6 +21,7 @@ export const toastOptions = {
   },
   error: {
     style: {
+      fontFamily: poppins.style.fontFamily,
       padding: "16px",
       color: colors.WHITE,
       background: colors.ERROR_BACKGROUND,

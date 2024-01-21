@@ -3,7 +3,7 @@ import { CarouselButtons, Container } from "./styles";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Button } from "../base/Button";
-import { ChevronLeft, ChevronRight } from "styled-icons/evaicons-solid";
+import { Icon } from "../base/Icon";
 
 type TCarouselProps = {
   children: ReactNode;
@@ -42,8 +42,11 @@ export const CarouselSection = ({ children }: TCarouselProps) => {
   }) => {
     return (
       <CarouselButtons>
-        <Button icon={<ChevronLeft size={28} />} onClick={previous} />
-        <Button icon={<ChevronRight size={28} />} onClick={next} />
+        <Button
+          icon={<Icon name="chevron-left" size={28} />}
+          onClick={previous}
+        />
+        <Button icon={<Icon name="chevron-right" size={28} />} onClick={next} />
       </CarouselButtons>
     );
   };

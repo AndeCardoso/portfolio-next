@@ -5,15 +5,20 @@ import Typescript from "@public/techIconsSVG/typescript.svg";
 import StyledComponent from "@public/techIconsSVG/styled-component.svg";
 import { StyledSVG } from "./styles";
 
-interface ISvgTechIconProps {
-  techIcon: TTechIconTypes;
+interface ITechSvgProps {
+  techSvg: TTechSvgTypes;
   size: number;
 }
 
-export type TTechIconTypes = "next" | "react" | "typescript";
+export type TTechSvgTypes =
+  | "next"
+  | "react"
+  | "typescript"
+  | "sass"
+  | "styled-component";
 
-export const SVG = ({ techIcon, size }: ISvgTechIconProps) => {
-  const icons = {
+export const SVG = ({ techSvg, size }: ITechSvgProps) => {
+  const svgs = {
     next: Next,
     sass: SASS,
     react: React,
@@ -23,10 +28,10 @@ export const SVG = ({ techIcon, size }: ISvgTechIconProps) => {
 
   return (
     <StyledSVG
-      src={icons[techIcon].src}
+      src={svgs[techSvg].src}
       width={size}
       height={size}
-      alt={`icon ${techIcon}`}
+      alt={`${techSvg} image`}
     />
   );
 };

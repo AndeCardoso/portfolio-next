@@ -1,10 +1,11 @@
+"use client";
 import { ReactNode, useState } from "react";
 import { BurguerButton, Container, ResumeButtonContainer } from "./styles";
-import { ISectionButton } from "../Navbar";
 import { HeaderButton } from "../Navbar/styles";
+import { LangButtons } from "@components/LangButtons";
 
 interface IMobileNavbarProps {
-  sectionButtons: ISectionButton[];
+  sectionButtons: Object;
   resumeButton?: ReactNode;
 }
 
@@ -26,17 +27,18 @@ export const MobileNavbar = ({
         <div />
       </BurguerButton>
       <Container $isOpen={isOpen}>
-        {sectionButtons.map((button) => (
+        {Object.entries(sectionButtons).map((button) => (
           <HeaderButton
-            key={`${button.text}`}
-            hRef={button.link}
+            key={`${button[0]}`}
+            hRef={`#${button[0].toLocaleLowerCase()}`}
             bold="heavy"
             size={14}
             link
           >
-            {button.text}
+            {button[1]}
           </HeaderButton>
         ))}
+        <LangButtons />
         {resumeButton ? (
           <ResumeButtonContainer>{resumeButton}</ResumeButtonContainer>
         ) : null}

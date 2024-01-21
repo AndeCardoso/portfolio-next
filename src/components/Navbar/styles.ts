@@ -1,8 +1,9 @@
-import { colors } from "@src/global/colors";
+import { colors } from "@global/colors";
 import styled from "styled-components";
 import { Text } from "../base/Text";
 import { Button } from "../base/Button";
-import { breakpointScreenEnum } from "@src/constants/breakpoints";
+import { breakpointScreenEnum } from "@constants/breakpoints";
+import { Icon } from "../base/Icon";
 
 export const Container = styled.div`
   width: 92%;
@@ -23,25 +24,23 @@ export const Container = styled.div`
   }
 `;
 
+export const LangContainer = styled.div`
+  display: flex;
+  @media screen and (max-width: ${breakpointScreenEnum.MOBILE}px) {
+    display: none;
+  }
+`;
+
 export const WrapperBrand = styled.div`
   display: flex;
   align-items: center;
   gap: 16px;
   cursor: pointer;
 
-  p {
-    width: 150px;
-    line-break: auto;
-  }
-
   @media screen and (max-width: ${breakpointScreenEnum.MOBILE}px) {
     background-color: ${colors.HEADER_BACKGROUND_OPACITY};
     padding: 15px;
     border-radius: 50px;
-  }
-  p {
-    width: 110px;
-    line-break: auto;
   }
 `;
 
@@ -66,4 +65,8 @@ export const WrapperButtons = styled.div`
 
 export const DownloadButton = styled(Button)`
   border-radius: 50px;
+`;
+
+export const StyledIcon = styled(Icon)`
+  margin-left: 8;
 `;

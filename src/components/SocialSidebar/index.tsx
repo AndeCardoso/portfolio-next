@@ -1,10 +1,11 @@
 import React from "react";
 import { Container, Wrapper } from "./styles";
 import { Button } from "../base/Button";
-import { Instagram } from "styled-icons/boxicons-logos";
+import { Icon } from "../base/Icon";
+import { ISocialButtons } from "./constants";
 
 interface ISocialSidebarProps {
-  socialList: any[];
+  socialList: ISocialButtons[];
 }
 
 export const SocialSidebar = ({ socialList }: ISocialSidebarProps) => {
@@ -13,8 +14,8 @@ export const SocialSidebar = ({ socialList }: ISocialSidebarProps) => {
       <Wrapper>
         {socialList.map((item, index) => (
           <Button
-            key={`${index}`}
-            icon={item.icon}
+            key={`${index}-${item.icon}`}
+            icon={<Icon name={item.icon} size={24} />}
             hRef={item.link}
             target="_blank"
             link

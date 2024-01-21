@@ -6,16 +6,16 @@ interface IExperienceProps {
 }
 
 export interface IExperienceData {
-  company: string;
-  period: string;
-  description: string;
+  COMPANY: string;
+  PERIOD: string;
+  DESCRIPTION: string;
 }
 
 export const Experience = ({ experiencesList }: IExperienceProps) => {
   return (
     <CarouselSection>
       {experiencesList.map((item, index) => (
-        <ExperienceItem key={`${item.company}-${index}`} data={item} />
+        <ExperienceItem key={`${item.COMPANY}-${index}`} data={item} />
       ))}
     </CarouselSection>
   );

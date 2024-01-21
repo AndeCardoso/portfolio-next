@@ -1,26 +1,26 @@
 import { IExperienceData } from "../..";
 import { Container, DescriptionText, PeriodText, Top } from "./styles";
 import { Text } from "@components/base/Text";
-import { colors } from "@src/global/colors";
+import { colors } from "@global/colors";
 
 interface IExperienceItemProps {
   data: IExperienceData;
 }
 
 export const ExperienceItem = ({
-  data: { company, period, description },
+  data: { COMPANY, PERIOD, DESCRIPTION },
 }: IExperienceItemProps) => {
   return (
     <Container>
       <Top>
         <PeriodText capsLock bold="medium" size={10} color={colors.PRIMARY}>
-          {period}
+          {PERIOD}
         </PeriodText>
         <Text size={34} bold="heavy">
-          {company}
+          {COMPANY}
         </Text>
       </Top>
-      <DescriptionText>{description}</DescriptionText>
+      <DescriptionText>{DESCRIPTION}</DescriptionText>
     </Container>
   );
 };

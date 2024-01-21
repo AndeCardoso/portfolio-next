@@ -1,8 +1,8 @@
-import React, { ReactNode, useRef } from "react";
+import React, { ReactNode } from "react";
 import { Container, Wrapper } from "./styles";
 import { Text } from "../base/Text";
-import { colors } from "@src/global/colors";
-import { useWindowDimensions } from "@src/hooks/useWindowDimension";
+import { colors } from "@global/colors";
+import { useWindowDimensions } from "@hooks/useWindowDimension";
 
 type TSectionProps = {
   title: string;

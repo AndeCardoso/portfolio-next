@@ -1,4 +1,4 @@
-import { colors } from "@src/global/colors";
+import { colors } from "@global/colors";
 import { Textarea } from "@nextui-org/react";
 import styled from "styled-components";
 import { poppins } from "@app/fonts";

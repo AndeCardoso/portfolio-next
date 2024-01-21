@@ -8,26 +8,26 @@ import {
   QuoteText,
 } from "./styles";
 import { Text } from "@components/base/Text";
-import { colors } from "@src/global/colors";
-import { Avatar } from "@src/components/base/Avatar";
+import { colors } from "@global/colors";
+import { Avatar } from "@components/base/Avatar";
 
 interface IReviewsItemProps {
   data: IReviewsData;
 }
 
 export const ReviewItem = ({
-  data: { avatar, name, role, quote },
+  data: { AVATAR, NAME, ROLE, QUOTE },
 }: IReviewsItemProps) => {
   return (
     <Container>
       <Author>
-        <Avatar imageURL={avatar} size={80} />
+        <Avatar imageURL={AVATAR} size={80} />
         <div>
           <Text bold="heavy" size={20}>
-            {name}
+            {NAME}
           </Text>
           <Text bold="medium" size={12} color={colors.PRIMARY} capsLock>
-            {role}
+            {ROLE}
           </Text>
         </div>
       </Author>
@@ -35,7 +35,7 @@ export const ReviewItem = ({
         <Quotation bold="heavy" size={48} color={colors.PRIMARY}>
           &quot;
         </Quotation>
-        <QuoteText>{quote}</QuoteText>
+        <QuoteText>{QUOTE}</QuoteText>
       </QuoteContainer>
     </Container>
   );

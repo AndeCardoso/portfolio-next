@@ -1,6 +1,6 @@
-import { Text } from "@components/base/Text";
-import { colors } from "@src/global/colors";
 import styled from "styled-components";
+import { Text } from "@components/base/Text";
+import { colors } from "@global/colors";
 
 export const Container = styled.div`
   max-width: 360px;
