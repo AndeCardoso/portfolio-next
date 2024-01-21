@@ -78,7 +78,7 @@ export const en = {
             "A company specializing in technological solutions for the insurance market.\nDeveloping systems to make life easier for insurance brokers.\nMulticalculation for Auto, Motorcycle, Truck, Home, Condominium, Business and Individual Life.\nManagement system for dynamic insurance brokers.",
         },
         {
-          COMPANY: "Freelancing",
+          COMPANY: "Freelancer",
           PERIOD: "2021/02",
           DESCRIPTION:
             "Development of systems for companies that aimed to promote their businesses through Landing Page websites, but with dashboard tools to manage textual, illustrative content, and redirectable links, making it easy and quick to update their websites.",
