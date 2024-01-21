@@ -78,10 +78,10 @@ export const pt = {
             "Uma empresa expecializada em soluções tecnologicas para o mercado de seguros.\nDesenvolvendo sistemas para tornar mais facil a vida do corretor de seguros.Aplicações de multicalculo para Automoveis, Motocicletas, Caminhões, Casas, Condomínios, Negócios and Vida Individual.\nSistema de gereciamento dinâmico para corretores de seguro.",
         },
         {
-          COMPANY: "Self-Employed",
+          COMPANY: "Freelancer",
           PERIOD: "2021/02",
           DESCRIPTION:
-            "Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.\n Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.",
+            "Desenvolvimento de sistemas para empresas que buscavam divulgar seus negócios através de sites Landing Page, porém com ferramentas de dashboard, gerir o conteúdo textual, ilustrativo e links redirecionaveis, tornando facíl e rapida a atualização de seus sites.",
         },
       ],
     },
