@@ -1,15 +1,15 @@
 import React from "react";
-import { Container, GroupButton } from "./styles";
 import { Text } from "@components/base/Text";
 import { Button } from "@components/base/Button";
+import { TextTyping } from "@components/base/TextTyping";
 import { BubbleBanner } from "./components/bubbleBanner";
 import { typingRolesConfig } from "./constants/typingRolesConfig";
 import { ChevronDown, ChevronRight } from "styled-icons/evaicons-solid";
-import { TextTyping } from "@components/base/TextTyping";
 import { colors } from "@global/colors";
 import { TLocaleTypes, getDictionary } from "@app/[lang]/dictionaries";
-import { usePathname } from "next/navigation";
 import { removeSlash } from "@utils/removeSlash";
+import { usePathname } from "next/navigation";
+import { Container, GroupButton } from "./styles";
 
 interface IHomeSectionProps {
   name: string;

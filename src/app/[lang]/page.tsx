@@ -11,12 +11,13 @@ import { Contact } from "@sections/Contact";
 import { Reviews } from "@sections/Reviews";
 import { HomeSection } from "@sections/Home";
 import { Experience } from "@sections/Experiences";
-import { ITechIcon, Technologies } from "@sections/Technologies";
+import { Technologies } from "@sections/Technologies";
 
 import { Container, Main } from "./styles";
 import { TLocaleTypes, getDictionary } from "./dictionaries";
 
-import { techIconList, socialButtons } from "@constants/profileText";
+import { socialButtons } from "@src/components/SocialSidebar/constants";
+import { techSvgList } from "@src/sections/Technologies/constants";
 
 export default function Home({
   params: { lang },
@@ -56,7 +57,7 @@ export default function Home({
             description={dict.MAIN.TECHNOLOGIES.DESCRIPTION}
             linked="technologies"
           >
-            <Technologies iconsList={techIconList as ITechIcon[]} />
+            <Technologies svgList={techSvgList} />
           </Section>
           <Divisor />
           <Section

@@ -1,25 +1,21 @@
 import React from "react";
 import { Text } from "@components/base/Text";
 import { Container, Wrapper } from "./styles";
-import { SVG, TTechIconTypes } from "@components/base/Svg";
+import { SVG } from "@components/base/Svg";
 import { colors } from "@global/colors";
+import { ITechSvgList } from "./constants";
 
 interface ITechnologiesProps {
-  iconsList: ITechIcon[];
+  svgList: ITechSvgList[];
 }
 
-export interface ITechIcon {
-  icon: TTechIconTypes;
-  name: string;
-}
-
-export const Technologies = ({ iconsList }: ITechnologiesProps) => {
+export const Technologies = ({ svgList }: ITechnologiesProps) => {
   return (
     <Container>
-      {iconsList.map((item, index) => {
+      {svgList.map((item, index) => {
         return (
           <Wrapper key={`${item.name}-${index}`}>
-            <SVG techIcon={item.icon} size={120} />
+            <SVG techSvg={item.svg} size={120} />
             <Text bold="medium" color={colors.PRIMARY}>
               {item.name}
             </Text>
