@@ -2,13 +2,12 @@
 import { SocialSidebar } from "@components/SocialSidebar";
 import { FixedBanner } from "@components/FixedBanner";
 import { ScrollSide } from "@components/ScrollSide";
-import { Divisor } from "@components/base/Divisor";
+import { Divider } from "@components/base/Divider";
 import { Navbar } from "@components/Navbar";
 import { Section } from "@components/Section";
 
 import { About } from "@sections/About";
 import { Contact } from "@sections/Contact";
-import { Reviews } from "@sections/Reviews";
 import { HomeSection } from "@sections/Home";
 import { Experience } from "@sections/Experiences";
 import { Technologies } from "@sections/Technologies";
@@ -40,7 +39,7 @@ export default function Home({
             roles={dict.MAIN.HEADER.ROLES}
             bio={dict.MAIN.HEADER.SHORT_BIO}
           />
-          <Divisor />
+          <Divider />
           <Section
             title={dict.MAIN.ABOUT_ME.TITLE}
             description={dict.MAIN.ABOUT_ME.DESCRIPTION}
@@ -51,7 +50,7 @@ export default function Home({
               attributes={dict.MAIN.ABOUT_ME.INFOS}
             />
           </Section>
-          <Divisor />
+          <Divider />
           <Section
             title={dict.MAIN.TECHNOLOGIES.TITLE}
             description={dict.MAIN.TECHNOLOGIES.DESCRIPTION}
@@ -59,7 +58,7 @@ export default function Home({
           >
             <Technologies svgList={techSvgList} />
           </Section>
-          <Divisor />
+          <Divider />
           <Section
             title={dict.MAIN.EXPERIENCES.TITLE}
             description={dict.MAIN.EXPERIENCES.DESCRIPTION}
@@ -67,19 +66,7 @@ export default function Home({
           >
             <Experience experiencesList={dict.MAIN.EXPERIENCES.CAROUSEL} />
           </Section>
-          <Divisor />
-          <Section
-            title={dict.MAIN.REVIEWS.TITLE}
-            description={dict.MAIN.REVIEWS.DESCRIPTION}
-            linked="reviews"
-          >
-            <Reviews reviewsList={dict.MAIN.REVIEWS.CAROUSEL} />
-          </Section>
-          <Divisor />
-          {/* <Section title="Projects" description="Last works" linked="projects">
-            <Text>teste</Text>
-          </Section> */}
-          <Divisor />
+          <Divider />
           <Section
             title={dict.MAIN.CONTACT_ME.TITLE}
             description={dict.MAIN.CONTACT_ME.DESCRIPTION}
