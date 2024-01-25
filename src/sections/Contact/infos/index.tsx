@@ -2,10 +2,11 @@ import React from "react";
 import { Container, Header, Key, List, Row, Value } from "./styles";
 import { Text } from "@components/base/Text";
 import { colors } from "@global/colors";
+import { IInfoList, IInfoTitle } from "..";
 
 interface IInfoContactProps {
-  infoList: Object;
-  infoTitle: Object;
+  infoList: IInfoList;
+  infoTitle: IInfoTitle;
 }
 
 export const InfoContact = ({ infoList, infoTitle }: IInfoContactProps) => {
