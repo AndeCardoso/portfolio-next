@@ -13,8 +13,6 @@ import { TLocaleTypes, getDictionary } from "@app/[lang]/dictionaries";
 import { removeSlash } from "@utils/removeSlash";
 import { usePathname } from "next/navigation";
 
-import { ChevronRight } from "styled-icons/evaicons-solid";
-
 import { Container } from "./styles";
 
 export const ContactForm = () => {
