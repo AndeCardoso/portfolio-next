@@ -37,7 +37,7 @@ export const useContact = () => {
     message: yup
       .string()
       .required(dict.MAIN.CONTACT_ME.FORM.MESSAGE.REQUIRED)
-      .min(144, dict.MAIN.CONTACT_ME.FORM.MESSAGE.MIN),
+      .min(64, dict.MAIN.CONTACT_ME.FORM.MESSAGE.MIN),
   });
 
   const onSubmitForm = async (data: IContactForm) => {
