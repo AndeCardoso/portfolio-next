@@ -1,4 +1,3 @@
-"use client";
 import React, { HTMLAttributeAnchorTarget, ReactNode } from "react";
 import { StyledButton, StyledLink, StyledText } from "./styles";
 import { ITextProps } from "../Text";
