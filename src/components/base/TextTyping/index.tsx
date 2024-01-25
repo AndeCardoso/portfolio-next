@@ -5,7 +5,7 @@ import { poppins } from "@app/fonts";
 import Typed from "typed.js";
 
 interface ITextTypingProps extends ITextProps {
-  children: string | string[];
+  children: string[];
   typingConfig: object;
 }
 
