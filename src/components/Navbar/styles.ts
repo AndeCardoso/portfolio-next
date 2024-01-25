@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Text } from "../base/Text";
 import { Button } from "../base/Button";
 import { breakpointScreenEnum } from "@constants/breakpoints";
-import { Icon } from "../base/Icon";
+import Link from "next/link";
 
 export const Container = styled.div`
   width: 92%;
@@ -31,11 +31,11 @@ export const LangContainer = styled.div`
   }
 `;
 
-export const WrapperBrand = styled.div`
+export const WrapperBrand = styled(Link)`
   display: flex;
   align-items: center;
   gap: 16px;
-  cursor: pointer;
+  text-decoration: none;
 
   @media screen and (max-width: ${breakpointScreenEnum.MOBILE}px) {
     background-color: ${colors.HEADER_BACKGROUND_OPACITY};
@@ -65,8 +65,4 @@ export const WrapperButtons = styled.div`
 
 export const DownloadButton = styled(Button)`
   border-radius: 50px;
-`;
-
-export const StyledIcon = styled(Icon)`
-  margin-left: 8;
 `;

@@ -25,7 +25,7 @@ export default function Home({
 }) {
   const dict = getDictionary(lang);
   return (
-    <Main>
+    <Main id="home">
       <Navbar
         brandName={dict.MAIN.HEADER.NAME}
         brandImage={"/logo.png"}

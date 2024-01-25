@@ -3,7 +3,6 @@ import { CarouselButtons, Container } from "./styles";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Button } from "../base/Button";
-import { Icon } from "../base/Icon";
 
 type TCarouselProps = {
   children: ReactNode;

@@ -28,6 +28,7 @@ export const StyledButton = styled(Button)<IStyledButtonProps>`
   border: none;
   justify-content: center;
   align-items: center;
+
   p {
     color: ${({ $selected }) => ($selected ? colors.PRIMARY : colors.WHITE)};
   }
