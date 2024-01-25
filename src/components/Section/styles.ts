@@ -8,8 +8,7 @@ export const Container = styled.section`
   align-items: flex-start;
   justify-content: flex-start;
   background-color: ${colors.BACKGROUND_COLOR};
-  padding-top: 200px;
-  margin-top: -200px;
+  scroll-margin-top: 220px;
   height: auto;
 
   @media screen and (max-width: ${breakpointScreenEnum.MOBILE}px) {

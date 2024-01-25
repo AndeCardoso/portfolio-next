@@ -21,9 +21,10 @@ export const StyledLink = styled(Link)<TStyledButtonProps>`
   background-color: transparent;
   border: 0.2px solid ${colors.PRIMARY};
   text-decoration: none;
+  gap: 8px;
 
   svg {
-    fill: whitesmoke;
+    fill: ${colors.WHITE};
   }
 
   &:hover ${StyledText} {

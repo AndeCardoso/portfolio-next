@@ -8,7 +8,6 @@ export const en = {
         ABOUT: "About",
         TECHNOLOGIES: "Technologies",
         EXPERIENCES: "Experiences",
-        REVIEWS: "Reviews",
         CONTACT: "Contact",
       },
       RESUME: "Resume",

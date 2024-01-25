@@ -4,11 +4,9 @@ import {
   DownloadButton,
   HeaderButton,
   LangContainer,
-  StyledIcon,
   WrapperBrand,
   WrapperButtons,
 } from "./styles";
-import { Download } from "styled-icons/evaicons-solid";
 import Image from "next/image";
 import { MobileNavbar } from "../MobileNavbar";
 import { LangButtons } from "../LangButtons";
@@ -25,7 +23,6 @@ interface ISectionButtons {
     ABOUT: string;
     TECHNOLOGIES: string;
     EXPERIENCES: string;
-    REVIEWS: string;
     CONTACT: string;
   };
   RESUME: string;
@@ -38,7 +35,7 @@ export const Navbar = ({
 }: INavbarProps) => {
   return (
     <Container>
-      <WrapperBrand onClick={() => window.scrollTo(0, 0)}>
+      <WrapperBrand href="#home">
         <Image alt="Brand image" src={brandImage} width={50} height={50} />
         <BrandName bold="medium" size={22}>
           {brandName}
@@ -50,7 +47,8 @@ export const Navbar = ({
           <HeaderButton
             hRef={"/pdf/AndersonCardoso-Resume.pdf"}
             bold="heavy"
-            icon={<StyledIcon name="download" size={18} />}
+            iconName="download"
+            iconSize={18}
             size={14}
             link
             target="_blank"
@@ -76,7 +74,8 @@ export const Navbar = ({
         </LangContainer>
         <DownloadButton
           hRef="/pdf/AndersonCardoso-Resume.pdf"
-          icon={<Download size={18} style={{ marginLeft: 8 }} />}
+          iconName="download"
+          iconSize={18}
           size={14}
           bold="heavy"
           link

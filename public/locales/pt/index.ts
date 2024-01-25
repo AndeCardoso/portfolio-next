@@ -8,7 +8,6 @@ export const pt = {
         ABOUT: "Sobre",
         TECHNOLOGIES: "Tecnologias",
         EXPERIENCES: "Experiências",
-        REVIEWS: "Reviews",
         CONTACT: "Contato",
       },
       RESUME: "Currículo",

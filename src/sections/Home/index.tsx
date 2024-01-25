@@ -4,7 +4,6 @@ import { Button } from "@components/base/Button";
 import { TextTyping } from "@components/base/TextTyping";
 import { BubbleBanner } from "./components/bubbleBanner";
 import { typingRolesConfig } from "./constants/typingRolesConfig";
-import { ChevronDown, ChevronRight } from "styled-icons/evaicons-solid";
 import { colors } from "@global/colors";
 import { TLocaleTypes, getDictionary } from "@app/[lang]/dictionaries";
 import { removeSlash } from "@utils/removeSlash";
@@ -34,10 +33,10 @@ export const HomeSection = ({ name, roles, bio }: IHomeSectionProps) => {
       </TextTyping>
       <Text size={16}>{bio}</Text>
       <GroupButton>
-        <Button icon={<ChevronRight size={28} />} link hRef="#contact">
+        <Button iconName="chevron-right" iconSize={28} link hRef="#contact">
           {dict.MAIN.ABOUT_ME.BUTTON}
         </Button>
-        <Button icon={<ChevronDown size={28} />} link hRef="#about" />
+        <Button iconName="chevron-down" iconSize={28} link hRef="#about" />
       </GroupButton>
     </Container>
   );
