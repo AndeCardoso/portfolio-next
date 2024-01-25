@@ -57,7 +57,8 @@ export const ContactForm = () => {
         textArea
       />
       <Button
-        icon={<ChevronRight size={28} />}
+        iconName="chevron-right"
+        iconSize={28}
         onClick={handleSubmit(onSubmitForm)}
       >
         {dict.MAIN.CONTACT_ME.BUTTON}

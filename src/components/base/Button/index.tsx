@@ -2,10 +2,12 @@
 import React, { HTMLAttributeAnchorTarget, ReactNode } from "react";
 import { StyledButton, StyledLink, StyledText } from "./styles";
 import { ITextProps } from "../Text";
+import { Icon, TIconNames } from "../Icon";
 
 interface IButtonProps extends Omit<ITextProps, "children"> {
   children?: string | ReactNode;
-  icon?: ReactNode;
+  iconName?: TIconNames;
+  iconSize?: number;
   onClick?: () => void;
   hRef?: string;
   link?: boolean;
@@ -16,7 +18,8 @@ export const Button = ({
   children,
   onClick,
   hRef,
-  icon,
+  iconName,
+  iconSize = 20,
   link = false,
   bold = "medium",
   size = 16,
@@ -36,7 +39,7 @@ export const Button = ({
           {children}
         </StyledText>
       ) : null}
-      {icon}
+      {iconName ? <Icon name={iconName} size={iconSize} /> : null}
     </StyledLink>
   ) : (
     <StyledButton
@@ -50,7 +53,7 @@ export const Button = ({
           {children}
         </StyledText>
       ) : null}
-      {icon}
+      {iconName ? <Icon name={iconName} size={iconSize} /> : null}
     </StyledButton>
   );
 };

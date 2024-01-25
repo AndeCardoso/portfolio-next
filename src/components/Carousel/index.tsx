@@ -42,11 +42,8 @@ export const CarouselSection = ({ children }: TCarouselProps) => {
   }) => {
     return (
       <CarouselButtons>
-        <Button
-          icon={<Icon name="chevron-left" size={28} />}
-          onClick={previous}
-        />
-        <Button icon={<Icon name="chevron-right" size={28} />} onClick={next} />
+        <Button iconName="chevron-left" iconSize={28} onClick={previous} />
+        <Button iconName="chevron-right" iconSize={28} onClick={next} />
       </CarouselButtons>
     );
   };
