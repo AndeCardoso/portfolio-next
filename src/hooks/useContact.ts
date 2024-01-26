@@ -40,17 +40,17 @@ export const useContact = () => {
       .min(64, dict.MAIN.CONTACT_ME.FORM.MESSAGE.MIN),
   });
 
-  const baseUrl = process.env.BASE_URL;
-
   const onSubmitForm = async (data: IContactForm) => {
     try {
-      const response = await fetch(`${baseUrl}/api/contact`, {
+      const response = await fetch(`/api/contact`, {
         headers: {
           "Content-Type": "application/json",
         },
         method: "POST",
         body: JSON.stringify(data),
       });
+
+      console.log(response);
 
       if (response.status === HttpStatusCode.ok) {
         toast.success(dict.MAIN.CONTACT_ME.ALERTS.SUCCESS);
