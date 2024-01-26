@@ -50,8 +50,6 @@ export const useContact = () => {
         body: JSON.stringify(data),
       });
 
-      console.log(response);
-
       if (response.status === HttpStatusCode.ok) {
         toast.success(dict.MAIN.CONTACT_ME.ALERTS.SUCCESS);
         return;
