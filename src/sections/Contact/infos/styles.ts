@@ -11,10 +11,6 @@ export const Container = styled.div`
   border: 1px solid ${colors.PRIMARY};
   border-radius: 8px;
   gap: 24px;
-
-  .signature {
-    filter: invert();
-  }
 `;
 
 export const Header = styled.div``;

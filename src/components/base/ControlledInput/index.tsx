@@ -1,5 +1,5 @@
 import React from "react";
-import { Control, Controller, FieldErrors } from "react-hook-form";
+import { Control, Controller } from "react-hook-form";
 import { ITextAreaProps, TextArea } from "../TextArea";
 import { IInputProps, Input } from "../Input";
 import { HelperText } from "./styles";
