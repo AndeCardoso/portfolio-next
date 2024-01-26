@@ -12,7 +12,7 @@ export const socialButtons: ISocialButtons[] = [
   },
   {
     icon: "linkedin",
-    link: "https://www.linkedin.com/in/andersoncardoso-dev/?locale=en_US",
+    link: "https://www.linkedin.com/in/andersoncardoso-dev/",
   },
   {
     icon: "instagram",

@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import { InputProps } from "@nextui-org/react";
 import { StyledInput } from "./styles";

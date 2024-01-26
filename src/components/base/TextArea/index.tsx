@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import { TextAreaProps } from "@nextui-org/react";
 import { StyledTextarea } from "./styles";
