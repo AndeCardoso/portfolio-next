@@ -44,7 +44,7 @@ export const pt = {
         },
         ADDRESS: {
           LABEL: "Cidade",
-          INFO: "Florianópolis",
+          INFO: "Osório",
         },
         PHONE: {
           LABEL: "Telefone",
