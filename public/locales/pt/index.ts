@@ -20,14 +20,20 @@ export const pt = {
         "Desenvolvedor Mobile",
         "As vezes Back-End também...",
       ],
-      SHORT_BIO:
-        "Salve! Meu nome é Anderson Cardoso!\n\n Eu trabalho como desenvolvedor web e mobile desde 2021, com foco em React, React Native, e Next.js, todos utilizando TypeScript.\nTambém ja trabalhei com Angular 7, e com Node.js quando desenvolvia projetos full-stack como freelancer.",
+      SHORT_BIO: `Salve! Meu nome é Anderson Cardoso!\n\n Sou um Desenvolvedor Front-End e Mobile, especializado em React Native e React.js.
+      Trabalho profissionalmente com React e React Native desde 2021, desenvolvendo soluções e aprimorando o desempenho de aplicações nos setores de saúde, logística e seguros.
+      Tenho um forte entendimento dos princípios de UX/UI e sou altamente comprometido com a qualidade e usabilidade das aplicações. Meu foco é identificar as reais necessidades e entregar um valor maior do que apenas um simples produto digital.
+      Tenho grande orgulho em escrever código limpo e eficiente, sempre priorizando processos, pois são eles que realmente fazem a diferença no sucesso de um grande projeto.`,
       BUTTON_CONTACT_ME: "Entre em contato",
     },
     ABOUT_ME: {
       TITLE: "Sobre mim",
       DESCRIPTION: "Minha história",
-      TEXT: "Me considero uma pessoa de fácil convivência, com habilidade para interagir efetivamente com diversos tipos de pessoas. Gosto de aprender com os outros e explorar abordagens diferentes para resolver problemas. Estou sempre ansioso para ajudar e apoiar os outros em suas tarefas e desafios.\nEm 2012, frequentei a Universidade Luterana do Brasil, também conhecida como ULBRA, focando em C# com ASP.NET MVC e desenvolvimento para Windows Phone. Embora não tenha concluído o curso naquela época, atualmente estou retornando para concluí-lo.\nMinhas prioridades incluem manter a qualidade do código e garantir uma experiência de usuário positiva.\nTenho orgulho da minha proficiência em identificar e resolver bugs.",
+      TEXT: `Estou trabalhando profissionalmente com React e React Native há mais de 3 anos, desenvolvendo soluções e aprimorando o desempenho de aplicações nos setores de saúde, logística e seguros.
+      Minhas principais tecnologias incluem React Native, Expo, React, Next, Vite, TypeScript e JavaScript.
+      Atualmente, atuo como Software Engineer na WeFit, especializada em aplicativos móveis white-label.
+      Em relação às soft skills, sou reconhecido como um profissional prestativo, sempre pronto para colaborar com os colegas. Tenho um olhar atento aos detalhes, excelente capacidade de resolução de problemas, priorizo a qualidade do código, aprendo rápido e sou um pensador criativo.
+      Entre minhas conquistas notáveis, destaco o aumento da nota de um aplicativo de saúde na Play Store de 3.4 para 4.6 e na Apple Store de 2.4 para 4.5, com mais de 15 milhões de downloads registrados.`,
       BUTTON: "Entre em contato",
       INFOS: {
         AGE: {
