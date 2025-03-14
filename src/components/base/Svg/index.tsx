@@ -1,6 +1,8 @@
 import Next from "@public/techIconsSVG/next.svg";
 import SASS from "@public/techIconsSVG/sass.svg";
+import Expo from "@public/techIconsSVG/expo.svg";
 import React from "@public/techIconsSVG/react.svg";
+import Tailwind from "@public/techIconsSVG/tailwind.svg";
 import Typescript from "@public/techIconsSVG/typescript.svg";
 import StyledComponent from "@public/techIconsSVG/styled-component.svg";
 import { StyledSVG } from "./styles";
@@ -15,6 +17,8 @@ export type TTechSvgTypes =
   | "react"
   | "typescript"
   | "sass"
+  | "expo"
+  | "tailwind"
   | "styled-component";
 
 export const SVG = ({ techSvg, size }: ITechSvgProps) => {
@@ -22,6 +26,8 @@ export const SVG = ({ techSvg, size }: ITechSvgProps) => {
     next: Next,
     sass: SASS,
     react: React,
+    tailwind: Tailwind,
+    expo: Expo,
     typescript: Typescript,
     "styled-component": StyledComponent,
   };
