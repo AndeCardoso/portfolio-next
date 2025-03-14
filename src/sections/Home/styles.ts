@@ -12,8 +12,8 @@ export const Container = styled.div`
   padding-bottom: 0;
   overflow: visible;
   position: relative;
-  margin-top: 64px;
-  gap: 32px;
+  margin-top: 32px;
+  gap: 24px;
 
   @media screen and (max-width: ${breakpointScreenEnum.MOBILE}px) {
     align-items: center;

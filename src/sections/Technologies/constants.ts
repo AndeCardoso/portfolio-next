@@ -23,6 +23,14 @@ export const techSvgList: ITechSvgList[] = [
     svg: "react",
   },
   {
+    name: "Tailwind",
+    svg: "tailwind",
+  },
+  {
+    name: "Expo",
+    svg: "expo",
+  },
+  {
     name: "SASS",
     svg: "sass",
   },
