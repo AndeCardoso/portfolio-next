@@ -9,6 +9,7 @@ import { Section } from "@components/Section";
 import { About } from "@sections/About";
 import { Contact } from "@sections/Contact";
 import { HomeSection } from "@sections/Home";
+import { Reviews } from "@src/sections/Reviews";
 import { Experience } from "@sections/Experiences";
 import { Technologies } from "@sections/Technologies";
 
@@ -65,6 +66,14 @@ export default function Home({
             linked="experiences"
           >
             <Experience experiencesList={dict.MAIN.EXPERIENCES.CAROUSEL} />
+          </Section>
+          <Divider />
+          <Section
+            title={dict.MAIN.REVIEWS.TITLE}
+            description={dict.MAIN.REVIEWS.DESCRIPTION}
+            linked="reviews"
+          >
+            <Reviews reviewsList={dict.MAIN.REVIEWS.CAROUSEL} />
           </Section>
           <Divider />
           <Section

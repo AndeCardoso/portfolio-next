@@ -8,6 +8,7 @@ export const en = {
         ABOUT: "About",
         TECHNOLOGIES: "Technologies",
         EXPERIENCES: "Experiences",
+        REVIEWS: "Reviews",
         CONTACT: "Contact",
       },
       RESUME: "Resume",
@@ -97,18 +98,14 @@ export const en = {
       DESCRIPTION: "What co-workers say",
       CAROUSEL: [
         {
-          AVATAR: "/reviwers/01.jpg",
-          NAME: "Eloisa Morais",
-          ROLE: "Mobile developer",
-          QUOTE:
-            "Excellent all around! What stood out most was Jake's excellent service. He made sure our order was placed in time, even though we were ordering on What stood out most was Jake's excellent service.",
-        },
-        {
           AVATAR: "/reviwers/02.jpg",
           NAME: "Everton Xavier",
-          ROLE: "Tech leader / Web developer",
-          QUOTE:
-            "Excellent all around! What stood out most was Jake's excellent service. He made sure our order was placed in time, even though we were ordering on What stood out most was Jake's excellent service.",
+          ROLE: "Tech Leader / Web Developer",
+          QUOTE: `I had the privilege of working with Anderson at WeFit on two distinct projects, totaling 15 months of collaboration. During this time, he stood out as a highly skilled professional, showcasing exceptional technical expertise and a unique ability to manage ceremonies and client interactions.
+
+In the first project, which lasted 6 months, Anderson was essential in delivering innovative and high-quality solutions. His ability to solve complex problems and his proactivity were key factors in the team’s success.
+
+In the second project, where we worked together for 9 months, he continued to impress with his dedication, goal-oriented approach, and ability to mediate technical requirements and client expectations.`,
         },
       ],
     },
