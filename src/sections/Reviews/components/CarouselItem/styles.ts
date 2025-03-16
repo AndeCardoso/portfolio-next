@@ -3,11 +3,7 @@ import { Text } from "@components/base/Text";
 import { colors } from "@global/colors";
 
 export const Container = styled.div`
-  max-width: 360px;
-
-  @media screen and (max-width: 1665px) {
-    max-width: 520px;
-  }
+  width: auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
