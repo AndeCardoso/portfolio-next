@@ -7,6 +7,7 @@ export const pt = {
         HOME: "Início",
         ABOUT: "Sobre",
         TECHNOLOGIES: "Tecnologias",
+        PROJECTS: "Projetos",
         EXPERIENCES: "Experiências",
         REVIEWS: "Reviews",
         CONTACT: "Contato",
@@ -16,9 +17,8 @@ export const pt = {
     HEADER: {
       NAME: "Anderson\nCardoso",
       ROLES: [
-        "Desenvolvedor Front-End",
-        "Desenvolvedor Web",
-        "Desenvolvedor Mobile",
+        "Engenheiro Front-End",
+        "Engenheiro Mobile",
         "As vezes Back-End também...",
       ],
       SHORT_BIO: `Salve! Meu nome é Anderson Cardoso!\n\n Sou um Desenvolvedor Front-End e Mobile, especializado em React Native e React.js.
@@ -62,6 +62,26 @@ export const pt = {
           INFO: "andersoncardoso.dev@gmail.com",
         },
       },
+    },
+    PROJECTS: {
+      TITLE: "Projetos",
+      DESCRIPTION: "Principais projetos desenvolvidos",
+      CAROUSEL: [
+        {
+          PERIOD: "2025/01",
+          TITLE: "Where I Paused",
+          DESCRIPTION: `Um aplicativo móvel que permite acompanhar onde você parou em filmes, séries, animes, livros ou qualquer outra coisa.`,
+          URL: "https://github.com/AndeCardoso/where-i-paused",
+          BANNER: "/projects/02.png",
+        },
+        {
+          PERIOD: "2024/01",
+          TITLE: "Atenda",
+          DESCRIPTION: `Um aplicativo móvel que permite o cadastro e gerenciamento de ordens de serviço.`,
+          URL: "https://github.com/AndeCardoso/atenda-mobile",
+          BANNER: "/projects/01.png",
+        },
+      ],
     },
     TECHNOLOGIES: {
       TITLE: "Tecnologias",

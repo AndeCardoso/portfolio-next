@@ -10,6 +10,7 @@ import { About } from "@sections/About";
 import { Contact } from "@sections/Contact";
 import { HomeSection } from "@sections/Home";
 import { Reviews } from "@src/sections/Reviews";
+import { Projects } from "@src/sections/Projects";
 import { Experience } from "@sections/Experiences";
 import { Technologies } from "@sections/Technologies";
 
@@ -58,6 +59,14 @@ export default function Home({
             linked="technologies"
           >
             <Technologies svgList={techSvgList} />
+          </Section>
+          <Divider />
+          <Section
+            title={dict.MAIN.PROJECTS.TITLE}
+            description={dict.MAIN.PROJECTS.DESCRIPTION}
+            linked="projects"
+          >
+            <Projects projectList={dict.MAIN.PROJECTS.CAROUSEL} />
           </Section>
           <Divider />
           <Section

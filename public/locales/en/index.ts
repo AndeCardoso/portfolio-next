@@ -7,6 +7,7 @@ export const en = {
         HOME: "Home",
         ABOUT: "About",
         TECHNOLOGIES: "Technologies",
+        PROJECTS: "Projects",
         EXPERIENCES: "Experiences",
         REVIEWS: "Reviews",
         CONTACT: "Contact",
@@ -16,9 +17,8 @@ export const en = {
     HEADER: {
       NAME: "Anderson\nCardoso",
       ROLES: [
-        "Front-End Developer",
-        "Web Developer",
-        "Mobile Developer",
+        "Front-End Engineer",
+        "Mobile Engineer",
         "A Few Back-Ender too...",
       ],
       SHORT_BIO: `Hello there, my name is Anderson Cardoso!
@@ -68,6 +68,26 @@ export const en = {
     TECHNOLOGIES: {
       TITLE: "Technologies",
       DESCRIPTION: "Developing on",
+    },
+    PROJECTS: {
+      TITLE: "Projects",
+      DESCRIPTION: "Main projects developed",
+      CAROUSEL: [
+        {
+          PERIOD: "2025/01",
+          TITLE: "Where I Paused",
+          DESCRIPTION: `A mobile application that allows you to track where you left off in movies, series, anime, books, or anything else.`,
+          URL: "https://github.com/AndeCardoso/where-i-paused",
+          BANNER: "/projects/02.png",
+        },
+        {
+          PERIOD: "2024/01",
+          TITLE: "Atenda",
+          DESCRIPTION: `A mobile application that allows for the registration and management of service orders.`,
+          URL: "https://github.com/AndeCardoso/atenda-mobile",
+          BANNER: "/projects/01.png",
+        },
+      ],
     },
     EXPERIENCES: {
       TITLE: "Experiences",
