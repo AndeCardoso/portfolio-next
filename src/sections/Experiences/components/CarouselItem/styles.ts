@@ -22,7 +22,7 @@ export const Top = styled.div`
 `;
 
 export const DescriptionText = styled(Text)`
-  height: 150px;
+  height: 250px;
   overflow-y: scroll;
   padding-right: 16px;
 

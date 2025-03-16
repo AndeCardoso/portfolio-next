@@ -26,7 +26,7 @@ export const Quotation = styled(Text)`
 `;
 
 export const QuoteText = styled(Text)`
-  height: 150px;
+  height: 250px;
   overflow-y: scroll;
   padding-right: 16px;
 
