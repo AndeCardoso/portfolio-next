@@ -3,11 +3,7 @@ import { colors } from "@global/colors";
 import styled from "styled-components";
 
 export const Container = styled.div`
-  max-width: 380px;
-
-  @media screen and (max-width: 1665px) {
-    max-width: 590px;
-  }
+  width: auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -22,7 +18,7 @@ export const Top = styled.div`
 `;
 
 export const DescriptionText = styled(Text)`
-  height: 150px;
+  height: 250px;
   overflow-y: scroll;
   padding-right: 16px;
 

@@ -7,7 +7,9 @@ export const pt = {
         HOME: "Início",
         ABOUT: "Sobre",
         TECHNOLOGIES: "Tecnologias",
+        PROJECTS: "Projetos",
         EXPERIENCES: "Experiências",
+        REVIEWS: "Reviews",
         CONTACT: "Contato",
       },
       RESUME: "Currículo",
@@ -15,9 +17,8 @@ export const pt = {
     HEADER: {
       NAME: "Anderson\nCardoso",
       ROLES: [
-        "Desenvolvedor Front-End",
-        "Desenvolvedor Web",
-        "Desenvolvedor Mobile",
+        "Engenheiro Front-End",
+        "Engenheiro Mobile",
         "As vezes Back-End também...",
       ],
       SHORT_BIO: `Salve! Meu nome é Anderson Cardoso!\n\n Sou um Desenvolvedor Front-End e Mobile, especializado em React Native e React.js.
@@ -62,6 +63,26 @@ export const pt = {
         },
       },
     },
+    PROJECTS: {
+      TITLE: "Projetos",
+      DESCRIPTION: "Principais projetos desenvolvidos",
+      CAROUSEL: [
+        {
+          PERIOD: "2025/01",
+          TITLE: "Where I Paused",
+          DESCRIPTION: `Um aplicativo móvel que permite acompanhar onde você parou em filmes, séries, animes, livros ou qualquer outra coisa.`,
+          URL: "https://github.com/AndeCardoso/where-i-paused",
+          BANNER: "/projects/02.png",
+        },
+        {
+          PERIOD: "2024/01",
+          TITLE: "Atenda",
+          DESCRIPTION: `Um aplicativo móvel que permite o cadastro e gerenciamento de ordens de serviço.`,
+          URL: "https://github.com/AndeCardoso/atenda-mobile",
+          BANNER: "/projects/01.png",
+        },
+      ],
+    },
     TECHNOLOGIES: {
       TITLE: "Tecnologias",
       DESCRIPTION: "Desenvolvo em",
@@ -95,18 +116,14 @@ export const pt = {
       DESCRIPTION: "O que colegas dizem",
       CAROUSEL: [
         {
-          AVATAR: "/reviwers/01.jpg",
-          NAME: "Eloisa Morais",
-          ROLE: "Desenvolvedora Mobile",
-          QUOTE:
-            "Excellent all around! What stood out most was Jake's excellent service. He made sure our order was placed in time, even though we were ordering on What stood out most was Jake's excellent service.",
-        },
-        {
           AVATAR: "/reviwers/02.jpg",
           NAME: "Everton Xavier",
           ROLE: "Líder técnico / Desenvolvedor Web",
-          QUOTE:
-            "Excellent all around! What stood out most was Jake's excellent service. He made sure our order was placed in time, even though we were ordering on What stood out most was Jake's excellent service.",
+          QUOTE: `Tive o privilégio de trabalhar com Anderson na WeFit em dois projetos distintos, totalizando 15 meses de colaboração. Durante esse período, ele se destacou como um profissional altamente qualificado, demonstrando uma expertise técnica excepcional e uma habilidade única para gerenciar cerimônias e interações com clientes.
+
+No primeiro projeto, que durou 6 meses, Anderson foi essencial para a entrega de soluções inovadoras e de alta qualidade. Sua capacidade de resolver problemas complexos e sua proatividade foram fatores-chave para o sucesso da equipe.
+
+No segundo projeto, no qual trabalhamos juntos por 9 meses, ele continuou a impressionar com sua dedicação, abordagem orientada a resultados e habilidade para mediar requisitos técnicos e expectativas dos clientes.`,
         },
       ],
     },

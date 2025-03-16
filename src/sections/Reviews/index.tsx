@@ -15,7 +15,7 @@ export interface IReviewsData {
 
 export const Reviews = ({ reviewsList }: IReviewsProps) => {
   return (
-    <CarouselSection>
+    <CarouselSection itemsShowed={1}>
       {reviewsList.map((item, index) => (
         <ReviewItem key={`${item.NAME}-${index}`} data={item} />
       ))}
