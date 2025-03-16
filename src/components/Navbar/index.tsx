@@ -23,6 +23,7 @@ interface ISectionButtons {
     ABOUT: string;
     TECHNOLOGIES: string;
     EXPERIENCES: string;
+    REVIEWS: string;
     CONTACT: string;
   };
   RESUME: string;

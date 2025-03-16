@@ -7,7 +7,9 @@ export const en = {
         HOME: "Home",
         ABOUT: "About",
         TECHNOLOGIES: "Technologies",
+        PROJECTS: "Projects",
         EXPERIENCES: "Experiences",
+        REVIEWS: "Reviews",
         CONTACT: "Contact",
       },
       RESUME: "Resume",
@@ -15,9 +17,8 @@ export const en = {
     HEADER: {
       NAME: "Anderson\nCardoso",
       ROLES: [
-        "Front-End Developer",
-        "Web Developer",
-        "Mobile Developer",
+        "Front-End Engineer",
+        "Mobile Engineer",
         "A Few Back-Ender too...",
       ],
       SHORT_BIO: `Hello there, my name is Anderson Cardoso!
@@ -68,6 +69,26 @@ export const en = {
       TITLE: "Technologies",
       DESCRIPTION: "Developing on",
     },
+    PROJECTS: {
+      TITLE: "Projects",
+      DESCRIPTION: "Main projects developed",
+      CAROUSEL: [
+        {
+          PERIOD: "2025/01",
+          TITLE: "Where I Paused",
+          DESCRIPTION: `A mobile application that allows you to track where you left off in movies, series, anime, books, or anything else.`,
+          URL: "https://github.com/AndeCardoso/where-i-paused",
+          BANNER: "/projects/02.png",
+        },
+        {
+          PERIOD: "2024/01",
+          TITLE: "Atenda",
+          DESCRIPTION: `A mobile application that allows for the registration and management of service orders.`,
+          URL: "https://github.com/AndeCardoso/atenda-mobile",
+          BANNER: "/projects/01.png",
+        },
+      ],
+    },
     EXPERIENCES: {
       TITLE: "Experiences",
       DESCRIPTION: "Working with",
@@ -97,18 +118,14 @@ export const en = {
       DESCRIPTION: "What co-workers say",
       CAROUSEL: [
         {
-          AVATAR: "/reviwers/01.jpg",
-          NAME: "Eloisa Morais",
-          ROLE: "Mobile developer",
-          QUOTE:
-            "Excellent all around! What stood out most was Jake's excellent service. He made sure our order was placed in time, even though we were ordering on What stood out most was Jake's excellent service.",
-        },
-        {
           AVATAR: "/reviwers/02.jpg",
           NAME: "Everton Xavier",
-          ROLE: "Tech leader / Web developer",
-          QUOTE:
-            "Excellent all around! What stood out most was Jake's excellent service. He made sure our order was placed in time, even though we were ordering on What stood out most was Jake's excellent service.",
+          ROLE: "Tech Leader / Web Developer",
+          QUOTE: `I had the privilege of working with Anderson at WeFit on two distinct projects, totaling 15 months of collaboration. During this time, he stood out as a highly skilled professional, showcasing exceptional technical expertise and a unique ability to manage ceremonies and client interactions.
+
+In the first project, which lasted 6 months, Anderson was essential in delivering innovative and high-quality solutions. His ability to solve complex problems and his proactivity were key factors in the team’s success.
+
+In the second project, where we worked together for 9 months, he continued to impress with his dedication, goal-oriented approach, and ability to mediate technical requirements and client expectations.`,
         },
       ],
     },

@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { Text } from "@components/base/Text";
 import { colors } from "@global/colors";
+import { Text } from "@components/base/Text";
 
 export const Container = styled.div`
   width: auto;
@@ -11,18 +11,14 @@ export const Container = styled.div`
   margin-right: 32px;
 `;
 
-export const Author = styled.div`
+export const Top = styled.div`
   display: flex;
-  align-items: flex-end;
-  gap: 16px;
+  align-items: center;
+  gap: 0px;
 `;
 
-export const Quotation = styled(Text)`
-  margin-top: -10px;
-`;
-
-export const QuoteText = styled(Text)`
-  height: 250px;
+export const DescriptionText = styled(Text)`
+  height: 80px;
   overflow-y: scroll;
   padding-right: 16px;
 
@@ -38,8 +34,7 @@ export const QuoteText = styled(Text)`
   }
 `;
 
-export const QuoteContainer = styled.div`
-  display: flex;
-  align-items: start;
-  gap: 8px;
+export const PeriodText = styled(Text)`
+  transform: rotate(90deg);
+  margin-left: -14px;
 `;
