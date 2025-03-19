@@ -24,6 +24,16 @@ export const Roles = styled.span`
   color: ${colors.PRIMARY};
 `;
 
+export const Top = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  @media screen and (max-width: ${breakpointScreenEnum.MOBILE}px) {
+    margin-bottom: 250px;
+  }
+`;
+
 export const GroupButton = styled.div`
   display: flex;
   flex-direction: row;
