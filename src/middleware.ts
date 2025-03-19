@@ -7,7 +7,7 @@ export function middleware(request: NextRequest) {
 
   if (
     [
-      "/logo.png",
+      "/logo.svg",
       "/api/contact",
       "/favicon.png",
       "/projects/01.png",
