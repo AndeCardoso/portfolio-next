@@ -46,6 +46,7 @@ export const WrapperBrand = styled(Link)`
 
 export const BrandName = styled(Text)`
   line-height: 20px;
+  margin-left: 16px;
 `;
 
 export const HeaderButton = styled(Button)`

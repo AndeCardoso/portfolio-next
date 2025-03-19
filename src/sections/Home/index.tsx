@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { Text } from "@components/base/Text";
 import { Button } from "@components/base/Button";
 import { TextTyping } from "@components/base/TextTyping";
@@ -8,7 +9,9 @@ import { colors } from "@global/colors";
 import { TLocaleTypes, getDictionary } from "@app/[lang]/dictionaries";
 import { removeSlash } from "@utils/removeSlash";
 import { usePathname } from "next/navigation";
-import { Container, GroupButton } from "./styles";
+import { Container, GroupButton, Top } from "./styles";
+
+import Logo from "@public/logo.svg";
 
 interface IHomeSectionProps {
   name: string;
@@ -21,7 +24,12 @@ export const HomeSection = ({ name, roles, bio }: IHomeSectionProps) => {
   const dict = getDictionary(removeSlash(pathname) as TLocaleTypes);
   return (
     <Container id="home">
-      <BubbleBanner>{name}</BubbleBanner>
+      <Top>
+        <BubbleBanner>
+          <Image alt="Brand image" src={Logo} width={250} unoptimized />
+          {name}
+        </BubbleBanner>
+      </Top>
       <TextTyping
         typingConfig={typingRolesConfig}
         color={colors.PRIMARY}

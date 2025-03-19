@@ -22,7 +22,7 @@ export const Container = styled.nav<IBurguerButtonProps>`
   right: 0;
   transform: ${({ $isOpen }) =>
     $isOpen ? "translateX(0)" : "translateX(+100%)"};
-  transition: all ease-in-out 0.6s;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.6s;
   z-index: -15;
   gap: 32px;
 
@@ -59,7 +59,7 @@ export const BurguerButton = styled.div<IBurguerButtonProps>`
     border-radius: 5px;
     position: relative;
     transform-origin: 0;
-    transition: all ease-in-out 0.5s;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
   }
 
   div:nth-child(1) {

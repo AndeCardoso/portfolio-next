@@ -7,13 +7,11 @@ import {
   WrapperBrand,
   WrapperButtons,
 } from "./styles";
-import Image from "next/image";
 import { MobileNavbar } from "../MobileNavbar";
 import { LangButtons } from "../LangButtons";
 
 interface INavbarProps {
   brandName: string;
-  brandImage: string;
   sectionButtons: ISectionButtons;
 }
 
@@ -29,15 +27,10 @@ interface ISectionButtons {
   RESUME: string;
 }
 
-export const Navbar = ({
-  brandName,
-  brandImage,
-  sectionButtons,
-}: INavbarProps) => {
+export const Navbar = ({ brandName, sectionButtons }: INavbarProps) => {
   return (
     <Container>
       <WrapperBrand href="#home">
-        <Image alt="Brand image" src={brandImage} width={50} height={50} />
         <BrandName bold="medium" size={22}>
           {brandName}
         </BrandName>
