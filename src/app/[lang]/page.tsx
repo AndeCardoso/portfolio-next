@@ -30,7 +30,6 @@ export default function Home({
     <Main id="home">
       <Navbar
         brandName={dict.MAIN.HEADER.NAME}
-        brandImage={"/logo.png"}
         sectionButtons={dict.MAIN.NAVBAR}
       />
       <Container>
