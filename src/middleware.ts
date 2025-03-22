@@ -13,6 +13,7 @@ export function middleware(request: NextRequest) {
       "/projects/01.png",
       "/projects/02.png",
       "/reviwers/02.jpg",
+      "/reviwers/03.jpg",
       "/backgroundBanner.jpg",
       "/pdf/AndersonCardoso-Resume.pdf",
     ].includes(pathname)
