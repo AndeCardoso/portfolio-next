@@ -125,6 +125,12 @@ No primeiro projeto, que durou 6 meses, Anderson foi essencial para a entrega de
 
 No segundo projeto, no qual trabalhamos juntos por 9 meses, ele continuou a impressionar com sua dedicação, abordagem orientada a resultados e habilidade para mediar requisitos técnicos e expectativas dos clientes.`,
         },
+        {
+          AVATAR: "/reviwers/03.jpg",
+          NAME: "Daniel Rezende",
+          ROLE: "Desenvolvedor Front-End e Mobile",
+          QUOTE: `O Anderson é, sem dúvida, um profissional de excelência. Com amplo domínio de React Native, TypeScript e tecnologias web, ele alia expertise técnica a uma liderança inspiradora. Sempre focado em inovação, entrega soluções eficientes e promove a colaboração. Um perfil raro e indispensável para qualquer equipe!`,
+        },
       ],
     },
     CONTACT_ME: {
