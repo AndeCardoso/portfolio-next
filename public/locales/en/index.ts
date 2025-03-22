@@ -127,6 +127,12 @@ In the first project, which lasted 6 months, Anderson was essential in deliverin
 
 In the second project, where we worked together for 9 months, he continued to impress with his dedication, goal-oriented approach, and ability to mediate technical requirements and client expectations.`,
         },
+        {
+          AVATAR: "/reviwers/03.jpg",
+          NAME: "Daniel Rezende",
+          ROLE: "Front-End and Mobile Developer",
+          QUOTE: `Anderson is, without a doubt, an outstanding professional. With extensive expertise in React Native, TypeScript, and web technologies, he combines technical proficiency with inspiring leadership. Always focused on innovation, he delivers efficient solutions and fosters collaboration. A rare and indispensable asset to any team!`,
+        },
       ],
     },
     CONTACT_ME: {
